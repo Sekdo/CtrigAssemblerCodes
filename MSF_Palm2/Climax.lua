@@ -4,7 +4,7 @@ MainTimeLineArr = {748,1380,1850,2400,3000,3808,4600,5500,6200,6800,7800,8400}
 --------------< Shape >--------------
 E_Base = CSMakeCircle(6,60,0,91,61)
 EllipseN = CS_RemoveStack(CS_MoveXY(CS_Distortion(E_Base,{5,0},{5,0},nil,nil),1600,0),20)
-E_Num = EllipseN[0] -- Å¸¿ø Á¡ÀÇ¼ö
+E_Num = EllipseN[0] -- íƒ€ì› ì ì˜ìˆ˜
 EllipseArr = {EllipseN,CS_Rotate(EllipseN,30),CS_Rotate(EllipseN,60),CS_Rotate(EllipseN,90),CS_Rotate(EllipseN,120)
         ,CS_Rotate(EllipseN,150),CS_Rotate(EllipseN,180),CS_Rotate(EllipseN,210),CS_Rotate(EllipseN,240)
         ,CS_Rotate(EllipseN,270),CS_Rotate(EllipseN,300),CS_Rotate(EllipseN,330)}
@@ -16,7 +16,7 @@ local X
 return X
 end
 
-SH_Flower = EllipseOverlapX() -- E_Num  : °¢Å¸¿øÀÇ ÃÑ Á¡ÀÇ¼ö¸¶´Ù À¯´ÖÅ¸ÀÔº¯°æ
+SH_Flower = EllipseOverlapX() -- E_Num  : ê°íƒ€ì›ì˜ ì´ ì ì˜ìˆ˜ë§ˆë‹¤ ìœ ë‹›íƒ€ì…ë³€ê²½
 ClimaxShapeArr = {SH_Flower}
 function HyperCycloid(T) return {2.1*math.cos(T) - math.cos(2.1*T), 2.1*math.sin(T) - math.sin(2.1*T)} end
 Hp0 = CSMakeGraphT({192,192},"HyperCycloid",0,0,10,10,200)
@@ -179,7 +179,7 @@ function WH_CAFunc()
 	local PlayerID = CAPlotPlayerID
 	local CA = CAPlotDataArr
 	local CB = CAPlotCreateArr
-		CMov(FP,TempDataIndex,V(CA[6])) -- µ¥ÀÌÅÍÀÎµ¦½º ÀÓ½ÃÀúÀå
+		CMov(FP,TempDataIndex,V(CA[6])) -- ë°ì´í„°ì¸ë±ìŠ¤ ì„ì‹œì €ì¥
 end
 
 CycleLength = 360
