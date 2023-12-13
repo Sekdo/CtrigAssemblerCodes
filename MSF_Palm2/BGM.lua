@@ -33,8 +33,8 @@ IBGM_EPD(FP,{Force5},OB_BGMVar,{
 DoActions(FP,{SetMemory(0x6509B0,SetTo,7)})
 
 
-BText1 = "\x1F¦¡¦¬¦´ ¡° \x10BGM\x04À» µèÁö ¾Ê½À´Ï´Ù\x04.\x0F¡±"
-BText2 = "\x1F¦¡¦¬¦´ ¡° \x10BGM\x04À» µè½À´Ï´Ù\x04.\x0F¡±"
+BText1 = "\x1Fâ”€â”â”« â€œ \x10BGM\x04ì„ ë“£ì§€ ì•ŠìŠµë‹ˆë‹¤\x04.\x0Fâ€"
+BText2 = "\x1Fâ”€â”â”« â€œ \x10BGM\x04ì„ ë“£ìŠµë‹ˆë‹¤\x04.\x0Fâ€"
 
 CIf(Force1,{Bring(CurrentPlayer,AtLeast,1,12,"Anywhere")})
  for i = 0, 4 do
