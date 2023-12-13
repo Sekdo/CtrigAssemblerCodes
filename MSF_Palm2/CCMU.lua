@@ -1,7 +1,7 @@
 function CCMU()
-------<  Äµ³´ Æ®¸®°Å  >---------------------------------------------
-CanNotText = "\x13\x1F¦¡¦¬¦´ \x06Äµ³´\x04ÀÌ °¨ÁöµÇ¾î ÇÊµåÀ§ÀÇ \x11ÀÏºÎÀ¯´Ö\x04À» \x08»èÁ¦\x04ÇÕ´Ï´Ù. \x1B Cannot Count +1¡è \x1F¦²¦¬¦¡"
-CanNotDefeat = "\x13\x1F¦¡¦¬¦´ \x06Äµ³´ \x04Ä«¿îÆ®°¡ 3È¸ÀÌ»ó ´©ÀûµÇ¾î ÆĞ¹èÇÕ´Ï´Ù. \x1B¡£¢ªGame Over¡£¢ª\x1F¦²¦¬¦¡"
+------<  ìº”ë‚« íŠ¸ë¦¬ê±°  >---------------------------------------------
+CanNotText = "\x13\x1Fâ”€â”â”« \x06ìº”ë‚«\x04ì´ ê°ì§€ë˜ì–´ í•„ë“œìœ„ì˜ \x11ì¼ë¶€ìœ ë‹›\x04ì„ \x08ì‚­ì œ\x04í•©ë‹ˆë‹¤. \x1B Cannot Count +1â†‘ \x1Fâ”£â”â”€"
+CanNotDefeat = "\x13\x1Fâ”€â”â”« \x06ìº”ë‚« \x04ì¹´ìš´íŠ¸ê°€ 3íšŒì´ìƒ ëˆ„ì ë˜ì–´ íŒ¨ë°°í•©ë‹ˆë‹¤. \x1Bã€‚ËšGame Overã€‚Ëš\x1Fâ”£â”â”€"
 
 C_Delay, C_Count = CreateNcodes(2)
 
@@ -22,9 +22,9 @@ ClearField = SetSwitch("Switch 254", Set)
 
 DoActionsX(FP,{SetNDeaths(FP,Subtract,1,C_Delay)})
 
-CIf(FP,{NVar(AllUnit,AtLeast,1400),NDeaths(FP,Exactly,0,C_Delay)}) -- À¯´Ö¼ö 1400ÀÌ»óÀÏ¶§
+CIf(FP,{NVar(AllUnit,AtLeast,1400),NDeaths(FP,Exactly,0,C_Delay)}) -- ìœ ë‹›ìˆ˜ 1400ì´ìƒì¼ë•Œ
 
-TriggerX(FP,{-- 1Äµ
+TriggerX(FP,{-- 1ìº”
 	NDeaths(FP,Exactly,0,C_Count);
 	NDeaths(FP,Exactly,0,C_Delay);
 	NDeaths(FP,Exactly,0,SelectView)
@@ -36,7 +36,7 @@ TriggerX(FP,{-- 1Äµ
 	SetNDeaths(FP,SetTo,170,C_Delay);
 })
 
-TriggerX(FP,{ -- 2Äµ
+TriggerX(FP,{ -- 2ìº”
 	NDeaths(FP,Exactly,1,C_Count);
 	NDeaths(FP,Exactly,0,C_Delay);
 	NDeaths(FP,Exactly,0,SelectView)
@@ -48,7 +48,7 @@ TriggerX(FP,{ -- 2Äµ
 	SetNDeaths(FP,SetTo,170,C_Delay);
 })
 
-TriggerX(FP,{ -- 3Äµ (ÆĞ¹è)
+TriggerX(FP,{ -- 3ìº” (íŒ¨ë°°)
 	NDeaths(FP,Exactly,2,C_Count);
 	NDeaths(FP,Exactly,0,C_Delay);
 	NDeaths(FP,Exactly,0,SelectView)
@@ -58,14 +58,14 @@ TriggerX(FP,{ -- 3Äµ (ÆĞ¹è)
 	ClearField;
 	SetNDeaths(FP,SetTo,3,C_Count);
 	SetNDeaths(FP,SetTo,170,C_Delay);
-	SetSwitch("Switch 255", Set); -- °ÇÀÛ Àá±İ
+	SetSwitch("Switch 255", Set); -- ê±´ì‘ ì ê¸ˆ
 })
 TriggerX(FP,{Switch("Switch 255",Cleared)},{CopyCpAction({RunAIScriptAt("Set Unit Order To: Junk Yard Dog","Anywhere")},{Force2},FP)},{Preserved})
 CIfEnd()
 
-CIf(FP,{Memory(0x628438,Exactly,0),NDeaths(FP,Exactly,0,C_Delay)}) -- Nextptr 0 ÀÏ¶§
+CIf(FP,{Memory(0x628438,Exactly,0),NDeaths(FP,Exactly,0,C_Delay)}) -- Nextptr 0 ì¼ë•Œ
 
-TriggerX(FP,{-- 1Äµ
+TriggerX(FP,{-- 1ìº”
 	NDeaths(FP,Exactly,0,C_Count);
 	NDeaths(FP,Exactly,0,C_Delay);
 	NDeaths(FP,Exactly,0,SelectView)
@@ -77,7 +77,7 @@ TriggerX(FP,{-- 1Äµ
 	SetNDeaths(FP,SetTo,170,C_Delay);
 })
 
-TriggerX(FP,{ -- 2Äµ
+TriggerX(FP,{ -- 2ìº”
 	NDeaths(FP,Exactly,1,C_Count);
 	NDeaths(FP,Exactly,0,C_Delay);
 	NDeaths(FP,Exactly,0,SelectView)
@@ -89,7 +89,7 @@ TriggerX(FP,{ -- 2Äµ
 	SetNDeaths(FP,SetTo,170,C_Delay);
 })
 
-TriggerX(FP,{ -- 3Äµ (ÆĞ¹è)
+TriggerX(FP,{ -- 3ìº” (íŒ¨ë°°)
 	NDeaths(FP,Exactly,2,C_Count);
 	NDeaths(FP,Exactly,0,C_Delay);
 	NDeaths(FP,Exactly,0,SelectView)
@@ -99,7 +99,7 @@ TriggerX(FP,{ -- 3Äµ (ÆĞ¹è)
 	ClearField;
 	SetNDeaths(FP,SetTo,3,C_Count);
 	SetNDeaths(FP,SetTo,170,C_Delay);
-	SetSwitch("Switch 255", Set); -- °ÇÀÛ Àá±İ
+	SetSwitch("Switch 255", Set); -- ê±´ì‘ ì ê¸ˆ
 })
 TriggerX(FP,{Switch("Switch 255",Cleared)},{CopyCpAction({RunAIScriptAt("Set Unit Order To: Junk Yard Dog","Anywhere")},{Force2},FP)},{Preserved})
 CIfEnd()
