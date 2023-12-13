@@ -13,8 +13,8 @@ SpellcasterPatch = {}
     for i = 0, 227 do
         SetUnitAdvFlag(i,0x200000,0x200000)
     end
-    SetUnitAdvFlag(204,0,0x200000) -- 204 ÀÌÆÑÆ®À¯´Ö Á¦¿Ü
-DoActions2(FP,SpellcasterPatch,{}) -- ¸¶³ªÀ¯´ÖÆĞÄ¡
+    SetUnitAdvFlag(204,0,0x200000) -- 204 ì´íŒ©íŠ¸ìœ ë‹› ì œì™¸
+DoActions2(FP,SpellcasterPatch,{}) -- ë§ˆë‚˜ìœ ë‹›íŒ¨ì¹˜
 
 BuildingArr = {106,126,127,130,147,148,151,154,162,168,173,174,175,190,200,201}
 HeroArr = {3,5,8,9,70,17,19,21,22,23,25,71,28,30,32,52,58,60,61,63,64,65,66,68,74,75,76,77,78,79,80,81,86,87,88,93,98,102,162} -- 38
@@ -56,7 +56,7 @@ NWhile(FP,Memory(0x6509B0,AtMost,19025+19 + (84*1699)))
 						TRemoveUnitAt(1,HeroArr[i],"CLoc91",Pre_HPlayer);
 						TCreateUnit(1,HeroArr[i],"CLoc91",HPlayer);
 						TModifyUnitEnergy(1,HeroArr[i],HPlayer,"CLoc91",100);
-                        TSetMemoryX(Vi(Nextptr[2],9),SetTo,1*65536,0xFF0000); -- ¿µÀÛÇÃ·¡±× ¼³Ä¡
+                        TSetMemoryX(Vi(Nextptr[2],9),SetTo,1*65536,0xFF0000); -- ì˜ì‘í”Œë˜ê·¸ ì„¤ì¹˜
 						SetMemoryX(0x664080 + 162*4,SetTo,0x0,0x1); -- Set Photon Canon Rank
 					})
 				CIfEnd()
