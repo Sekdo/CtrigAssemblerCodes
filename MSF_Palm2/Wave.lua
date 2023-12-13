@@ -35,12 +35,12 @@ CFunc(Call_WaveCAPlot)
 CFuncEnd()
 
 RTimer = CreateVar(FP)
-CMov(FP,RTimer,_Div(_Mul(_ReadF(0x57F23C),42),1000)) -- Ω«¡¶Ω√∞£
+CMov(FP,RTimer,_Div(_Mul(_ReadF(0x57F23C),42),1000)) -- Ïã§Ï†úÏãúÍ∞Ñ
 
 CJump(FP,0x400)
 SetLabel(0x4001)
 
-CDoActions(FP, { -- A,B ∞¯¡ﬂ C,D ¡ˆªÛ
+CDoActions(FP, { -- A,B Í≥µÏ§ë C,D ÏßÄÏÉÅ
     TCreateUnit(1,WUnitA,"CLoc91",P8),TCreateUnit(1,WUnitB,"CLoc91",P8);
     TCreateUnit(1,WUnitC,"CLoc91",P8),TCreateUnit(1,WUnitD,"CLoc91",P8);
 })
@@ -77,8 +77,8 @@ CIf(FP,{CDeaths("X",Exactly,1,WFlag)},{SetCDeaths("X",SetTo,0,WFlag)})
     })
     CallCFuncX(FP,Call_WaveCAPlot)
     OrderLocSize = 512
-    Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ∑Œƒ… ∫πªÁ
-    Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ∑Œƒ…≈©±‚º≥¡§
+    Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- Î°úÏºÄ Î≥µÏÇ¨
+    Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- Î°úÏºÄÌÅ¨Í∏∞ÏÑ§Ï†ï
     CDoActions(FP,{
         TOrder(WUnitA,P8,"CLoc92",Attack,"HZ");
         TOrder(WUnitB,P8,"CLoc92",Attack,"HZ");
