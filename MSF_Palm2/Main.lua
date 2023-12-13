@@ -68,27 +68,27 @@ end
 
 
 
-SetExpiration(12, 12) -- À¯Åë±âÇÑ¼³Á¤
+SetExpiration(12, 12) -- ìœ í†µê¸°í•œì„¤ì •
 DoActions(FP,{
 	RemoveUnit("Any unit",P12);
 	RemoveUnit(204,Force2);
 	RemoveUnit(204,P5);
 })
 Enable_TestMode(true)
-Install_Opening() -- ¿ÀÇÁ´×, ³­ÀÌµµ ¼±ÅÃ
-Install_System() -- ±âº» ½Ã½ºÅÛ
-Install_BGM() -- ºê±İ, ¿Â¿ÀÇÁ ( Void 1 ~ 5 )
+Install_Opening() -- ì˜¤í”„ë‹, ë‚œì´ë„ ì„ íƒ
+Install_System() -- ê¸°ë³¸ ì‹œìŠ¤í…œ
+Install_BGM() -- ë¸Œê¸ˆ, ì˜¨ì˜¤í”„ ( Void 1 ~ 5 )
 
-UnitPatch() -- ¿µÀÛ, ½ºÅ×ÀÌÅÍ½ºÇÃ·¡±× Àç¼³Á¤
+UnitPatch() -- ì˜ì‘, ìŠ¤í…Œì´í„°ìŠ¤í”Œë˜ê·¸ ì¬ì„¤ì •
 
-Install_MGun() -- ÀÏ¹İ°ÇÀÛ CLoc91 À¯´Ö»ı¼º // CLoc92 ¿À´õ
-Install_SGun() -- Æ¯°Ç
---Install_Climax() -- È­È¦
+Install_MGun() -- ì¼ë°˜ê±´ì‘ CLoc91 ìœ ë‹›ìƒì„± // CLoc92 ì˜¤ë”
+Install_SGun() -- íŠ¹ê±´
+--Install_Climax() -- í™”í™€
 Install_Wave()
 CCMU()
---CheckAPM(0x19) -- APMÃøÁ¤ (val 94 95 »ç¿ëÁß)
+--CheckAPM(0x19) -- APMì¸¡ì • (val 94 95 ì‚¬ìš©ì¤‘)
 
-HeroLoop() -- ¿µÀÛÀ¯´ÖÀÎ½Ä ·çÇÁ
+HeroLoop() -- ì˜ì‘ìœ ë‹›ì¸ì‹ ë£¨í”„
 
 
 EndCtrig()
