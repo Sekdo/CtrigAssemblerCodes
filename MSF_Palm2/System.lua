@@ -1,20 +1,20 @@
 function Install_System()
 
-------<  ÆÛ¼¾Æ®µô, ¹è¼Ó¼³Á¤  >---------------------------------------------
+------<  í¼ì„¼íŠ¸ë”œ, ë°°ì†ì„¤ì •  >---------------------------------------------
 
-DoActions(FP,{ -- ÆÛ¼¾Æ® µô ¼¼ÆÃ & ¹è¼Ó
+DoActions(FP,{ -- í¼ì„¼íŠ¸ ë”œ ì„¸íŒ… & ë°°ì†
     SetMemory(0x515B88,SetTo,256);SetMemory(0x515B8C,SetTo,256);SetMemory(0x515B90,SetTo,256);SetMemory(0x515B94,SetTo,256);
     SetMemory(0x515B98,SetTo,256);SetMemory(0x515B9C,SetTo,256);SetMemory(0x515BA0,SetTo,256);SetMemory(0x515BA4,SetTo,256);
     SetMemory(0x515BA8,SetTo,256);SetMemory(0x515BAC,SetTo,256);
-    SetMemory(0x515BC4,SetTo,20480); -- ¿µ¸¶ 8¸¸ ( Å¸ÀÔ 0,1,2,3,4 )
-	SetMemory(0x515BC8,SetTo,10240); -- ÀÏ¸¶ 4¸¸ ( Å¸ÀÔ 6 )
- 	SetMemory(0x515BCC,SetTo,5120); -- ¿¡½Ãºñ 2¸¸ ( Å¸ÀÔ 7 )
-	SetMemory(0x515BD0,SetTo,40960); -- °Ç¹° 
-	SetMemory(0x515BD4,SetTo,256); -- ÀûÀ¯´Ö ( Å¸ÀÔ 9 )
+    SetMemory(0x515BC4,SetTo,20480); -- ì˜ë§ˆ 8ë§Œ ( íƒ€ì… 0,1,2,3,4 )
+	SetMemory(0x515BC8,SetTo,10240); -- ì¼ë§ˆ 4ë§Œ ( íƒ€ì… 6 )
+ 	SetMemory(0x515BCC,SetTo,5120); -- ì—ì‹œë¹„ 2ë§Œ ( íƒ€ì… 7 )
+	SetMemory(0x515BD0,SetTo,40960); -- ê±´ë¬¼ 
+	SetMemory(0x515BD4,SetTo,256); -- ì ìœ ë‹› ( íƒ€ì… 9 )
     SetSpeed(SetTo,"#X2");
 })
 
-------<  ºñÀü & µ¿¸Í¼³Á¤  >---------------------------------------------
+------<  ë¹„ì „ & ë™ë§¹ì„¤ì •  >---------------------------------------------
 
 DoActions(Force1,{RunAIScript('Turn ON Shared Vision for Player 1'), -- Vision
 		RunAIScript('Turn ON Shared Vision for Player 2'),
@@ -27,17 +27,17 @@ DoActions(Force2,{
 	SetAllianceStatus(Force1,Enemy)
 })
 
-------<  ¹Ì¼Ç ¿ÀºêÁ§Æ¼ºê  >---------------------------------------------
+------<  ë¯¸ì…˜ ì˜¤ë¸Œì í‹°ë¸Œ  >---------------------------------------------
 
-OBText1 = "\x13\x04È¯ÀüÀ² : \x1F£²£²£®£° % \n\x13\x03¡Ø\x04¾Æ·¡ ±¤»ê¿¡ ÀÏ¸¶³ÖÀ¸½Ã¸é ¿µ¸¶(\x1F20,000¿ø)·Î º¯È¯µË´Ï´Ù.\n\x13\x04 ÇÁ·ÎÅä½ºÀÎ±¸¼ö : ÀüÃ¼À¯´Ö¼ö // Å×¶õÀÎ±¸¼ö : ±âÁö¿¡ÀÖ´ÂÀûÀ¯´Ö¼ö // Àú±×ÀÎ±¸¼ö : Äµ³´È½¼ö\n\x13\x1FTip: \x04±âÁöÀ¯´Ö¼ö 300ÀÌ»óÀÌ¸é º¡Ä¿°¡ ÅÍÁı´Ï´Ù."
-OBText2 = "\x13\x04È¯ÀüÀ² : \x1F£²£µ£®£° % \n\x13\x03¡Ø\x04¾Æ·¡ ±¤»ê¿¡ ÀÏ¸¶³ÖÀ¸½Ã¸é ¿µ¸¶(\x1F20,000¿ø)·Î º¯È¯µË´Ï´Ù.\n\x13\x04 ÇÁ·ÎÅä½ºÀÎ±¸¼ö : ÀüÃ¼À¯´Ö¼ö // Å×¶õÀÎ±¸¼ö : ±âÁö¿¡ÀÖ´ÂÀûÀ¯´Ö¼ö // Àú±×ÀÎ±¸¼ö : Äµ³´È½¼ö\n\x13\x1FTip: \x04±âÁöÀ¯´Ö¼ö 300ÀÌ»óÀÌ¸é º¡Ä¿°¡ ÅÍÁı´Ï´Ù."
-TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{ -- ³ë¸»
+OBText1 = "\x13\x04í™˜ì „ìœ¨ : \x1Fï¼’ï¼’ï¼ï¼ % \n\x13\x03â€»\x04ì•„ë˜ ê´‘ì‚°ì— ì¼ë§ˆë„£ìœ¼ì‹œë©´ ì˜ë§ˆ(\x1F20,000ì›)ë¡œ ë³€í™˜ë©ë‹ˆë‹¤.\n\x13\x04 í”„ë¡œí† ìŠ¤ì¸êµ¬ìˆ˜ : ì „ì²´ìœ ë‹›ìˆ˜ // í…Œë€ì¸êµ¬ìˆ˜ : ê¸°ì§€ì—ìˆëŠ”ì ìœ ë‹›ìˆ˜ // ì €ê·¸ì¸êµ¬ìˆ˜ : ìº”ë‚«íšŸìˆ˜\n\x13\x1FTip: \x04ê¸°ì§€ìœ ë‹›ìˆ˜ 300ì´ìƒì´ë©´ ë²™ì»¤ê°€ í„°ì§‘ë‹ˆë‹¤."
+OBText2 = "\x13\x04í™˜ì „ìœ¨ : \x1Fï¼’ï¼•ï¼ï¼ % \n\x13\x03â€»\x04ì•„ë˜ ê´‘ì‚°ì— ì¼ë§ˆë„£ìœ¼ì‹œë©´ ì˜ë§ˆ(\x1F20,000ì›)ë¡œ ë³€í™˜ë©ë‹ˆë‹¤.\n\x13\x04 í”„ë¡œí† ìŠ¤ì¸êµ¬ìˆ˜ : ì „ì²´ìœ ë‹›ìˆ˜ // í…Œë€ì¸êµ¬ìˆ˜ : ê¸°ì§€ì—ìˆëŠ”ì ìœ ë‹›ìˆ˜ // ì €ê·¸ì¸êµ¬ìˆ˜ : ìº”ë‚«íšŸìˆ˜\n\x13\x1FTip: \x04ê¸°ì§€ìœ ë‹›ìˆ˜ 300ì´ìƒì´ë©´ ë²™ì»¤ê°€ í„°ì§‘ë‹ˆë‹¤."
+TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{ -- ë…¸ë§
     CopyCpAction({SetMissionObjectivesX(OBText1)}, {Force1}, FP);
     })
-TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{ -- ÇÏµå
+TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{ -- í•˜ë“œ
     CopyCpAction({SetMissionObjectivesX(OBText2)}, {Force1}, FP);
     })
-------<  À¯´Ö¼ö Ã¼Å© , ÀÎ±¸¼ö Ç¥±â >---------------------------------------------
+------<  ìœ ë‹›ìˆ˜ ì²´í¬ , ì¸êµ¬ìˆ˜ í‘œê¸° >---------------------------------------------
 AllUnit, AllUnitX = CreateVars(2,FP)
 	TriggerX(FP,Always(),{FSetMemory(0x0582264,SetTo,2400),
 	FSetMemory(0x0582268,SetTo,2400),
@@ -96,14 +96,14 @@ CDoActions(FP,{
 	TSetMemory(0x582204+4*3,SetTo,HZUnitCount);
 	TSetMemory(0x582204+4*4,SetTo,HZUnitCount);
 })
-------<  º¡Ä¿»èÁ¦ Æ®¸®°Å  >---------------------------------------------
+------<  ë²™ì»¤ì‚­ì œ íŠ¸ë¦¬ê±°  >---------------------------------------------
 TriggerX(FP,{NVar(HZUnitCount,AtLeast,600)},{KillUnit(125,Force1);})
 
-------<  ¸®´õº¸µå Æ®¸®°Å  >---------------------------------------------
+------<  ë¦¬ë”ë³´ë“œ íŠ¸ë¦¬ê±°  >---------------------------------------------
 LB = CreateCcode()
 
 DoActionsX(FP,{SetCDeaths("X",Add,1,LB)})
-DifLB = {"\x04¦¡¦¬¦´ \x03N\x04ormal \x04¦²¦¬¦¡","\x04¦¡¦¬¦´ \x08H\x04ard \x04¦²¦¬¦¡"}
+DifLB = {"\x04â”€â”â”« \x03N\x04ormal \x04â”£â”â”€","\x04â”€â”â”« \x08H\x04ard \x04â”£â”â”€"}
 
 for i = 1, 2 do
 	TriggerX(FP,{CDeaths("X",Exactly,1,LB),CDeaths("X",Exactly,i,GMode)},LeaderBoardScore(Kills,"\x1FP\x04oints" ..DifLB[i]),{Preserved})
@@ -112,9 +112,9 @@ for i = 1, 2 do
 
 TriggerX(FP,{CDeaths("X",AtLeast,340,LB)},{SetCDeaths("X",SetTo,0,LB)},{Preserved})
 TriggerX(FP,{CDeaths("X",Exactly,0,LB)},{Order("Men",Force2,"CountingLoc",Attack,"HZ")},{Preserved})
-DoActions(FP,{LeaderBoardComputerPlayers(Disable)},{}) -- ÄÄÇ»ÅÍ ¸®´õº¸µå ÇØÁ¦
+DoActions(FP,{LeaderBoardComputerPlayers(Disable)},{}) -- ì»´í“¨í„° ë¦¬ë”ë³´ë“œ í•´ì œ
 
-------<  ¸¶¸°, ¿µ¸¶ Æ®¸®°Å  >---------------------------------------------
+------<  ë§ˆë¦°, ì˜ë§ˆ íŠ¸ë¦¬ê±°  >---------------------------------------------
 MarID = {1,10,16,99,100}
 
 function CreateUnit2(Count,Unit,Location,Player)
@@ -132,16 +132,16 @@ function CreateUnit2(Count,Unit,Location,Player)
 	})
 end
 
-DeathM1 = "\x12\x1F¦¡¦¬¦´\x06 [1 Player]\x04ÀÇ \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathM2 = "\x12\x1F¦¡¦¬¦´\x0E [2 Player]\x04ÀÇ \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathM3 = "\x12\x1F¦¡¦¬¦´\x0F [3 Player]\x04ÀÇ \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathM4 = "\x12\x1F¦¡¦¬¦´\x10 [4 Player]\x04ÀÇ \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathM5 = "\x12\x1F¦¡¦¬¦´\x11 [5 Player]\x04ÀÇ \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathHM1 = "\x12\x1F¦¡¦¬¦´\x06 [1 Player]\x04ÀÇ \x03H\x04ero \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathHM2 = "\x12\x1F¦¡¦¬¦´\x0E [2 Player]\x04ÀÇ \x03H\x04ero \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathHM3 = "\x12\x1F¦¡¦¬¦´\x0F [3 Player]\x04ÀÇ \x03H\x04ero \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathHM4 = "\x12\x1F¦¡¦¬¦´\x10 [4 Player]\x04ÀÇ \x03H\x04ero \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
-DeathHM5 = "\x12\x1F¦¡¦¬¦´\x11 [5 Player]\x04ÀÇ \x03H\x04ero \x1CM\x04arine ÀÌ \x06»ç¸Á\x04ÇÏ¿´½À´Ï´Ù."
+DeathM1 = "\x12\x1Fâ”€â”â”«\x06 [1 Player]\x04ì˜ \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathM2 = "\x12\x1Fâ”€â”â”«\x0E [2 Player]\x04ì˜ \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathM3 = "\x12\x1Fâ”€â”â”«\x0F [3 Player]\x04ì˜ \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathM4 = "\x12\x1Fâ”€â”â”«\x10 [4 Player]\x04ì˜ \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathM5 = "\x12\x1Fâ”€â”â”«\x11 [5 Player]\x04ì˜ \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathHM1 = "\x12\x1Fâ”€â”â”«\x06 [1 Player]\x04ì˜ \x03H\x04ero \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathHM2 = "\x12\x1Fâ”€â”â”«\x0E [2 Player]\x04ì˜ \x03H\x04ero \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathHM3 = "\x12\x1Fâ”€â”â”«\x0F [3 Player]\x04ì˜ \x03H\x04ero \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathHM4 = "\x12\x1Fâ”€â”â”«\x10 [4 Player]\x04ì˜ \x03H\x04ero \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
+DeathHM5 = "\x12\x1Fâ”€â”â”«\x11 [5 Player]\x04ì˜ \x03H\x04ero \x1CM\x04arine ì´ \x06ì‚¬ë§\x04í•˜ì˜€ìŠµë‹ˆë‹¤."
 
 MarText = {DeathM1,DeathM2,DeathM3,DeathM4,DeathM5}
 HeroMarText = {DeathHM1,DeathHM2,DeathHM3,DeathHM4,DeathHM5}
@@ -156,16 +156,16 @@ for i = 0, 4 do
 				CopyCpAction({DisplayTextX(HeroMarText[i+1],4),PlayWAVX("staredit\\wav\\Death.ogg")},{Force1,Force5},FP)
 		},{Preserved})
         
-        TriggerX(i,{ -- ¿µ¸¶ ¹Ù·Î»Ì±â
+        TriggerX(i,{ -- ì˜ë§ˆ ë°”ë¡œë½‘ê¸°
             Bring(CurrentPlayer,AtLeast,1,8,"Anywhere");
         },{
             ModifyUnitEnergy(1,8,CurrentPlayer,"Anywhere",0);
             RemoveUnitAt(1,8,"Anywhere",CurrentPlayer);
             CreateUnit2(1,MarID[i+1],"HZ",CurrentPlayer);
-            DisplayText("\x1F¦¡¦¬¦´ ¡° \x08H\x04ero \x03M\x04arine À» ¼ÒÈ¯ÇÏ¿´½À´Ï´Ù. ¡¸\x08-30,000 \x1FOre\x04¡¹¡±", 4);
+            DisplayText("\x1Fâ”€â”â”« â€œ \x08H\x04ero \x03M\x04arine ì„ ì†Œí™˜í•˜ì˜€ìŠµë‹ˆë‹¤. ã€Œ\x08-30,000 \x1FOre\x04ã€â€", 4);
         },{Preserved})
         
-        TriggerX(i,{ -- ¿µº¯
+        TriggerX(i,{ -- ì˜ë³€
             Bring(CurrentPlayer,AtLeast,1,20,"Hero");
             Accumulate(CurrentPlayer,AtLeast,20000,Ore);
         },{
@@ -173,20 +173,20 @@ for i = 0, 4 do
             ModifyUnitEnergy(1,20,CurrentPlayer,"Hero",0);
             RemoveUnitAt(1,20,"Hero",CurrentPlayer);
             CreateUnit2(1,MarID[i+1],"HeroDest",CurrentPlayer);
-            DisplayText("\x1F¦¡¦¬¦´ ¡° \x08H\x04ero \x03M\x04arine À» ¼ÒÈ¯ÇÏ¿´½À´Ï´Ù. ¡¸\x08-20,000 \x1FOre\x04¡¹¡±", 4);
+            DisplayText("\x1Fâ”€â”â”« â€œ \x08H\x04ero \x03M\x04arine ì„ ì†Œí™˜í•˜ì˜€ìŠµë‹ˆë‹¤. ã€Œ\x08-20,000 \x1FOre\x04ã€â€", 4);
         },{Preserved})
         
-        TriggerX(i,{ -- ÀÏ¸¶
+        TriggerX(i,{ -- ì¼ë§ˆ
             Bring(CurrentPlayer,AtLeast,1,0,"Anywhere");
         },{
 			ModifyUnitEnergy(all, 0, CurrentPlayer, "Anywhere", 0);
             RemoveUnitAt(1,0,"Anywhere",i);
             CreateUnit2(1,20,"HeroDest",i);
-            DisplayText("\x1F¦¡¦¬¦´ ¡° \x0EM\x04arine À» ¼ÒÈ¯ÇÏ¿´½À´Ï´Ù. ¡¸\x08-10,000 \x1FOre\x04¡¹¡±", 4);
+            DisplayText("\x1Fâ”€â”â”« â€œ \x0EM\x04arine ì„ ì†Œí™˜í•˜ì˜€ìŠµë‹ˆë‹¤. ã€Œ\x08-10,000 \x1FOre\x04ã€â€", 4);
         },{Preserved})
 end
 
-------<  Áß¸³À¯´Ö »èÁ¦, ¸Şµñ Æ®¸®°Å  >---------------------------------------------
+------<  ì¤‘ë¦½ìœ ë‹› ì‚­ì œ, ë©”ë”• íŠ¸ë¦¬ê±°  >---------------------------------------------
 
 NUnit = {0,1,10,16,99,100,20}
 
@@ -202,8 +202,8 @@ end
 DoActions(FP,{
     RemoveNUnit();
     RemoveUnit("Buildings",P12);
-    KillUnit(84,P5); -- ½Ã¾ß°øÀ¯¶§¹®¿¡ P5·Î ¼¼ÆÃ
-    RemoveUnit(204,P5); -- ½Ã¾ß°øÀ¯¶§¹®¿¡ P5·Î ¼¼ÆÃ
+    KillUnit(84,P5); -- ì‹œì•¼ê³µìœ ë•Œë¬¸ì— P5ë¡œ ì„¸íŒ…
+    RemoveUnit(204,P5); -- ì‹œì•¼ê³µìœ ë•Œë¬¸ì— P5ë¡œ ì„¸íŒ…
 })
 
 HealTikUnit = {34,2}
@@ -240,7 +240,7 @@ Trigger { -- 3 tik Heal
 			GiveUnits(all,21,i,"Anywhere",P12);
 			ModifyUnitEnergy(all, 21, P12, "Anywhere", 0);
 			RemoveUnit(21,P12);
-			DisplayText("\x1F¦¡¦¬¦´¡° \x04¿¹¾à \x0F¸Şµñ(3 tik) \x04±â´ÉÀ» »ç¿ëÇÕ´Ï´Ù\x04. ¡¸\x0F250ore\x04¡¹\x0F¡±", 4);
+			DisplayText("\x1Fâ”€â”â”«â€œ \x04ì˜ˆì•½ \x0Fë©”ë”•(3 tik) \x04ê¸°ëŠ¥ì„ ì‚¬ìš©í•©ë‹ˆë‹¤\x04. ã€Œ\x0F250ore\x04ã€\x0Fâ€", 4);
 			SetMemoryB(0x57F27C+(i*228)+34,SetTo,0);
 			SetMemoryB(0x57F27C+(i*228)+2,SetTo,1);
 			SetNDeaths(i,SetTo,1,HTik);
@@ -259,7 +259,7 @@ Trigger { -- 2 tik Heal
 			GiveUnits(all,21,i,"Anywhere",P12);
 			ModifyUnitEnergy(all, 21, P12, "Anywhere", 0);
 			RemoveUnit(21,P12);
-			DisplayText("\x1F¦¡¦¬¦´¡° \x04ÀÏ¹İ \x0F¸Şµñ(2 tik) \x04±â´ÉÀ» »ç¿ëÇÕ´Ï´Ù\x04. ¡¸\x0F200ore\x04¡¹\x0F¡±", 4);
+			DisplayText("\x1Fâ”€â”â”«â€œ \x04ì¼ë°˜ \x0Fë©”ë”•(2 tik) \x04ê¸°ëŠ¥ì„ ì‚¬ìš©í•©ë‹ˆë‹¤\x04. ã€Œ\x0F200ore\x04ã€\x0Fâ€", 4);
 			SetMemoryB(0x57F27C+(i*228)+34,SetTo,1);
 			SetMemoryB(0x57F27C+(i*228)+2,SetTo,0);
 			SetNDeaths(i,SetTo,0,HTik);
@@ -300,9 +300,9 @@ TriggerX(FP,{CDeaths("X",AtLeast,34*3,HZTimer)},{
     SetCDeaths("X",SetTo,0,HZTimer);
 },{Preserved})
 
-------<  °­Åğ Æ®¸®°Å  >---------------------------------------------
+------<  ê°•í‡´ íŠ¸ë¦¬ê±°  >---------------------------------------------
 
-BanText = "\x13\x1F¦¡¦¬¦´¡¼ \x04´ç½ÅÀº \x11¹æÀå¿¡ ÀÇÇØ \x08°­Á¦ÅğÀå \x04´çÇÏ¿´½À´Ï´Ù.  \x1F¡½¦²¦¬¦¡"
+BanText = "\x13\x1Fâ”€â”â”«ã€ \x04ë‹¹ì‹ ì€ \x11ë°©ì¥ì— ì˜í•´ \x08ê°•ì œí‡´ì¥ \x04ë‹¹í•˜ì˜€ìŠµë‹ˆë‹¤.  \x1Fã€‘â”£â”â”€"
 BanLocArr = {"BanP1","BanP2","BanP3","BanP4","BanP5"}
 for i = 0, 4 do
 Trigger {
@@ -318,13 +318,13 @@ Trigger {
 }
 end
 --56 59 243
-------<  ±âºÎ Æ®¸®°Å  >--------------------------------------------- [ GiveRateUnit = 8  ]
-GText1 = "\x13\x1F¦¡¦¬¦´ \x04±âºÎ±İ¾× ´ÜÀ§°¡ \x1F5,000 Ore \x04·Î \x11º¯°æ\x04µÇ¾ú½À´Ï´Ù. \x1F¦²¦¬¦¡"
-GText2 = "\x13\x1F¦¡¦¬¦´ \x04±âºÎ±İ¾× ´ÜÀ§°¡ \x1F10,000 Ore \x04·Î \x11º¯°æ\x04µÇ¾ú½À´Ï´Ù. \x1F¦²¦¬¦¡"
-GText3 = "\x13\x1F¦¡¦¬¦´ \x04±âºÎ±İ¾× ´ÜÀ§°¡ \x1F50,000 Ore \x04·Î \x11º¯°æ\x04µÇ¾ú½À´Ï´Ù. \x1F¦²¦¬¦¡"
-GText4 = "\x13\x1F¦¡¦¬¦´ \x04±âºÎ±İ¾× ´ÜÀ§°¡ \x1F100,000 Ore \x04·Î \x11º¯°æ\x04µÇ¾ú½À´Ï´Ù. \x1F¦²¦¬¦¡"
-GText5 = "\x13\x1F¦¡¦¬¦´ \x04±âºÎ±İ¾× ´ÜÀ§°¡ \x1F500,000 Ore \x04·Î \x11º¯°æ\x04µÇ¾ú½À´Ï´Ù. \x1F¦²¦¬¦¡"
-GText6 = "\x13\x1F¦¡¦¬¦´ \x04±âºÎ±İ¾× ´ÜÀ§°¡ \x1F1,000 Ore \x04·Î \x11º¯°æ\x04µÇ¾ú½À´Ï´Ù. \x1F¦²¦¬¦¡"
+------<  ê¸°ë¶€ íŠ¸ë¦¬ê±°  >--------------------------------------------- [ GiveRateUnit = 8  ]
+GText1 = "\x13\x1Fâ”€â”â”« \x04ê¸°ë¶€ê¸ˆì•¡ ë‹¨ìœ„ê°€ \x1F5,000 Ore \x04ë¡œ \x11ë³€ê²½\x04ë˜ì—ˆìŠµë‹ˆë‹¤. \x1Fâ”£â”â”€"
+GText2 = "\x13\x1Fâ”€â”â”« \x04ê¸°ë¶€ê¸ˆì•¡ ë‹¨ìœ„ê°€ \x1F10,000 Ore \x04ë¡œ \x11ë³€ê²½\x04ë˜ì—ˆìŠµë‹ˆë‹¤. \x1Fâ”£â”â”€"
+GText3 = "\x13\x1Fâ”€â”â”« \x04ê¸°ë¶€ê¸ˆì•¡ ë‹¨ìœ„ê°€ \x1F50,000 Ore \x04ë¡œ \x11ë³€ê²½\x04ë˜ì—ˆìŠµë‹ˆë‹¤. \x1Fâ”£â”â”€"
+GText4 = "\x13\x1Fâ”€â”â”« \x04ê¸°ë¶€ê¸ˆì•¡ ë‹¨ìœ„ê°€ \x1F100,000 Ore \x04ë¡œ \x11ë³€ê²½\x04ë˜ì—ˆìŠµë‹ˆë‹¤. \x1Fâ”£â”â”€"
+GText5 = "\x13\x1Fâ”€â”â”« \x04ê¸°ë¶€ê¸ˆì•¡ ë‹¨ìœ„ê°€ \x1F500,000 Ore \x04ë¡œ \x11ë³€ê²½\x04ë˜ì—ˆìŠµë‹ˆë‹¤. \x1Fâ”£â”â”€"
+GText6 = "\x13\x1Fâ”€â”â”« \x04ê¸°ë¶€ê¸ˆì•¡ ë‹¨ìœ„ê°€ \x1F1,000 Ore \x04ë¡œ \x11ë³€ê²½\x04ë˜ì—ˆìŠµë‹ˆë‹¤. \x1Fâ”£â”â”€"
 -- 1000 = 0 // 5000 = 1 // 10000 = 2 // 50000 = 3 // 100000 = 4 // 500000 = 5
 GTable = {{0,1,GText1},{1,2,GText2},{2,3,GText3},{3,4,GText4},{4,5,GText5},{5,0,GText6}}
 --Give Trig -- [ GiveUnit (58,60,69,71,72) ]
@@ -378,7 +378,7 @@ CIf(k,Bring(k,AtLeast,1,GiveUnitID[j+1],"Anywhere"))
 			actions = {
 					ModifyUnitEnergy(all, GiveUnitID[j+1], k, "Anywhere", 0);
 					RemoveUnitAt(1,GiveUnitID[j+1],"Anywhere",k);
-					DisplayText("\x1F¦¡¦¬¦´ ¡° \x1FÀÜ¾×\x04ÀÌ ºÎÁ·ÇÕ´Ï´Ù.\x0F¡±",4);
+					DisplayText("\x1Fâ”€â”â”« â€œ \x1Fì”ì•¡\x04ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.\x0Fâ€",4);
 					PreserveTrigger()
 				},
 		}
@@ -397,9 +397,9 @@ CIf(k,Bring(k,AtLeast,1,GiveUnitID[j+1],"Anywhere"))
 					SetResources(j,Add,GiveRate2[i+1],Ore);
 					ModifyUnitEnergy(all, GiveUnitID[j+1], k, "Anywhere", 0);
 					RemoveUnitAt(1,GiveUnitID[j+1],"Anywhere",k);
-					DisplayText("\x1F¦¡¦¬¦´ ¡° "..PlayerArr[j+1].."\x04¿¡°Ô \x1F"..GiveRate2[i+1].." Ore\x04¸¦ ±âºÎÇÏ¿´½À´Ï´Ù. \x0F¡±",4);
+					DisplayText("\x1Fâ”€â”â”« â€œ "..PlayerArr[j+1].."\x04ì—ê²Œ \x1F"..GiveRate2[i+1].." Ore\x04ë¥¼ ê¸°ë¶€í•˜ì˜€ìŠµë‹ˆë‹¤. \x0Fâ€",4);
 					SetMemory(0x6509B0,SetTo,j);
-					DisplayText("\x1F¦¡¦¬¦´ ¡° "..PlayerArr[k+1].."\x04¿¡°Ô \x1F"..GiveRate2[i+1].." Ore\x04¸¦ ±âºÎ¹Ş¾Ò½À´Ï´Ù. \x0F¡±",4);
+					DisplayText("\x1Fâ”€â”â”« â€œ "..PlayerArr[k+1].."\x04ì—ê²Œ \x1F"..GiveRate2[i+1].." Ore\x04ë¥¼ ê¸°ë¶€ë°›ì•˜ìŠµë‹ˆë‹¤. \x0Fâ€",4);
 					SetMemory(0x6509B0,SetTo,k);
 					PreserveTrigger();
 				},
@@ -413,7 +413,7 @@ Trigger {
 			PlayerCheck(j,0);
 		},
 	actions = {
-			DisplayText("\x1F¦¡¦¬¦´ ¡°"..PlayerArr[j+1].."\x04ÀÌ(°¡) Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. \x0F¡±",4);
+			DisplayText("\x1Fâ”€â”â”« â€œ"..PlayerArr[j+1].."\x04ì´(ê°€) ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. \x0Fâ€",4);
 			ModifyUnitEnergy(all, GiveUnitID[j+1], k, "Anywhere", 0);
 			RemoveUnitAt(1,GiveUnitID[j+1],"Anywhere",k);
 			PreserveTrigger();
@@ -428,7 +428,7 @@ elseif k==j then
 	},{Preserved})
 end end end
 
-------<  È¯Àü Æ®¸®°Å  >---------------------------------------------
+------<  í™˜ì „ íŠ¸ë¦¬ê±°  >---------------------------------------------
 ExRate = {22,25}
 
 for k = 1, 2 do
