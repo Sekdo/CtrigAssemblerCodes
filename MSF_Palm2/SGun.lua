@@ -1,14 +1,14 @@
 function Install_SGun()
 
 
-CereText =  "\x13\x1F¦¡¦¬¦´ \x1FT\x04rinity ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-NexusText =  "\x13\x1F¦¡¦¬¦´ \x1FS\x04kyscraper ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-OverText =  "\x13\x1F¦¡¦¬¦´ \x1FO\x04vermind ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-PrisonText =  "\x13\x1F¦¡¦¬¦´ \x1FD\x04iversity ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-CenterText =  "\x13\x1F¦¡¦¬¦´ \x1FC\x04enter ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-GeneText =  "\x13\x1F¦¡¦¬¦´ \x1FC\x04ore ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-CocoonText =  "\x13\x1F¦¡¦¬¦´ \x1FC\x04ocoon ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-IonText =  "\x13\x1F¦¡¦¬¦´ \x1FM\x04agnetic ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+100,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
+CereText =  "\x13\x1Fâ”€â”â”« \x1FT\x04rinity ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+NexusText =  "\x13\x1Fâ”€â”â”« \x1FS\x04kyscraper ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+OverText =  "\x13\x1Fâ”€â”â”« \x1FO\x04vermind ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+PrisonText =  "\x13\x1Fâ”€â”â”« \x1FD\x04iversity ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+CenterText =  "\x13\x1Fâ”€â”â”« \x1FC\x04enter ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+GeneText =  "\x13\x1Fâ”€â”â”« \x1FC\x04ore ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+CocoonText =  "\x13\x1Fâ”€â”â”« \x1FC\x04ocoon ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+IonText =  "\x13\x1Fâ”€â”â”« \x1FM\x04agnetic ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+100,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
 -----------< CD & Vars >-----------
 GunMaxAmount = 30
 SCD = CreateCcodeArr(3*GunMaxAmount)
@@ -47,10 +47,10 @@ CereE4 = CSMakeStar(4,135,60,0,CS_Level("Star",4,5),1)
 
 -- Nexsus --
 function Sort_X1BFunc(R,A)
-	return {math.abs((512+128*2)/2-R)} -- 2Â÷Á¤·Ä
+	return {math.abs((512+128*2)/2-R)} -- 2ì°¨ì •ë ¬
 end
 function Sort_X1CFunc(R,A)
-	return {math.abs((512+128*3)/2-R)} -- 2Â÷Á¤·Ä
+	return {math.abs((512+128*3)/2-R)} -- 2ì°¨ì •ë ¬
 end
 
 function SHBF(Y) return Y end
@@ -102,7 +102,7 @@ SH_PrisonC = CSMakeLine(6,128,0,12+1,0) -- GUnit
 
 function HyperCycloidA(T) return {4*math.cos(T) + math.cos(4*T), 4*math.sin(T) - math.sin(4*T)} end
 HCA0 = CSMakeGraphT({32,32},"HyperCycloidA",0,0,12,12,70)
-HCA = CS_RatioXY(CS_RemoveStack(HCA0,10,0),1.5,1.5) -- ¿øº»
+HCA = CS_RatioXY(CS_RemoveStack(HCA0,10,0),1.5,1.5) -- ì›ë³¸
 
 function HyperCycloidB(T) return {4*math.cos(T) + 2*math.cos(4*T), 4*math.sin(T) - 2*math.sin(4*T)} end
 HCB0 = CSMakeGraphT({32,32},"HyperCycloidB",0,0,12,12,120)
@@ -305,14 +305,14 @@ CJumpEnd(FP,0x101)
 
 function SetCerebrate(Player,GIndex,GunLevel,X,Y,Loc,UnitA1,UnitA2,UnitA3,UnitA4,UnitA5,UnitA6,UnitB1,UnitB2,UnitB3,UnitB4,UnitB5,UnitB6)
 
-CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-CUnitTypeC = SGVar[5*GIndex-1] -- À¯´Öº¯¼ö
-CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+CUnitTypeC = SGVar[5*GIndex-1] -- ìœ ë‹›ë³€ìˆ˜
+CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 
 CIf(FP,{Bring(Player,Exactly,0,151,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)},{CreateUnit(1,84,Loc,P5)})
     TriggerX(FP,{},{
@@ -324,7 +324,7 @@ CIf(FP,{Bring(Player,Exactly,0,151,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00
         SetNVar(BGMVar[4],SetTo,5);
         SetNVar(BGMVar[5],SetTo,5);
         SetNVar(OB_BGMVar,SetTo,5);
-    }) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+    }) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
 TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
         SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitA3);
         SetNVar(UV[4],SetTo,UnitA4);SetNVar(UV[5],SetTo,UnitA5);SetNVar(UV[6],SetTo,UnitA6);
@@ -334,7 +334,7 @@ TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{
         SetNVar(UV[4],SetTo,UnitB4);SetNVar(UV[5],SetTo,UnitB5);SetNVar(UV[6],SetTo,UnitB6);
     },{Preserved})
 DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-    -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+    -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
 
 TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
     SetCDeaths("X",SetTo,1,CTimer);
@@ -345,7 +345,7 @@ CTrigger(FP,{CDeaths("X",Exactly,1,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[3]); -- Main Air
     SetNVar(CShapeType,SetTo,5*GunLevel-4);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,2,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -354,7 +354,7 @@ CTrigger(FP,{CDeaths("X",Exactly,2,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,80,CTimer);
     SetCDeaths("X",SetTo,3,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -365,7 +365,7 @@ CTrigger(FP,{CDeaths("X",Exactly,3,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[3]); -- Main Air
     SetNVar(CShapeType,SetTo,5*GunLevel-3);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,4,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -374,7 +374,7 @@ CTrigger(FP,{CDeaths("X",Exactly,4,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,80,CTimer);
     SetCDeaths("X",SetTo,5,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -385,7 +385,7 @@ CTrigger(FP,{CDeaths("X",Exactly,5,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[3]); -- Main Air
     SetNVar(CShapeType,SetTo,5*GunLevel-2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,6,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -394,7 +394,7 @@ CTrigger(FP,{CDeaths("X",Exactly,6,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,80,CTimer);
     SetCDeaths("X",SetTo,7,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -405,7 +405,7 @@ CTrigger(FP,{CDeaths("X",Exactly,7,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[3]); -- Main Air
     SetNVar(CShapeType,SetTo,5*GunLevel-1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,8,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -414,7 +414,7 @@ CTrigger(FP,{CDeaths("X",Exactly,8,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,56,CTimer);
     SetCDeaths("X",SetTo,9,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -424,7 +424,7 @@ CTrigger(FP,{CDeaths("X",Exactly,9,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-4);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,6,CTimer);
     SetCDeaths("X",SetTo,10,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -434,7 +434,7 @@ CTrigger(FP,{CDeaths("X",Exactly,10,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-3);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,6,CTimer);
     SetCDeaths("X",SetTo,11,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -444,7 +444,7 @@ CTrigger(FP,{CDeaths("X",Exactly,11,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,6,CTimer);
     SetCDeaths("X",SetTo,12,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -454,7 +454,7 @@ CTrigger(FP,{CDeaths("X",Exactly,12,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeC,SetTo,UV[6]); -- Side
     SetNVar(CShapeType,SetTo,5*GunLevel-1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,6,CTimer);
     SetCDeaths("X",SetTo,13,CStage);
     SetCDeaths("X",SetTo,1,SideUnitCode);
@@ -465,25 +465,25 @@ CTrigger(FP,{CDeaths("X",Exactly,13,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[5]); -- Main
     SetNVar(CShapeType,SetTo,5*GunLevel);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetCDeaths("X",SetTo,14,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
-    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 
-CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
 
-CMov(FP,Gun_UnitA,CUnitTypeA) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-CMov(FP,Gun_UnitB,CUnitTypeB) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-CMov(FP,Gun_UnitC,CUnitTypeC) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-CMov(FP,Gun_Shape,CShapeType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Shape )
-CMov(FP,Gun_DataIndex,CDataIndex) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( DataIndex )
-CMov(FP,Gun_Player,CPlayer) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Player )
+CMov(FP,Gun_UnitA,CUnitTypeA) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+CMov(FP,Gun_UnitB,CUnitTypeB) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+CMov(FP,Gun_UnitC,CUnitTypeC) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+CMov(FP,Gun_Shape,CShapeType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Shape )
+CMov(FP,Gun_DataIndex,CDataIndex) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( DataIndex )
+CMov(FP,Gun_Player,CPlayer) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Player )
 
 OrderLocSize = 256+256
-    CallCFuncX(FP,CallCereCAPlot) -- CAPlot È£Ãâ
-    Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-    Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+    CallCFuncX(FP,CallCereCAPlot) -- CAPlot í˜¸ì¶œ
+    Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+    Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
     CDoActions(FP,{
         TOrder(CUnitTypeA,CPlayer,"CLoc92",Attack,"HZ");
         TOrder(CUnitTypeB,CPlayer,"CLoc92",Attack,"HZ");
@@ -500,14 +500,14 @@ LevelLoopLimit = CreateVar(FP)
 
 function SetNexus(Player,GIndex,GunLevel,X,Y,Loc,DestLoc,UnitA1,UnitA2,UnitA3,UnitA4,UnitA5,UnitB1,UnitB2,UnitB3,UnitB4,UnitB5,LoopLimit,CX,CY)
 
-CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
-CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 
 CIf(FP,{Bring(Player,Exactly,0,154,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
     TriggerX(FP,{},{
@@ -519,7 +519,7 @@ CIf(FP,{Bring(Player,Exactly,0,154,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00
         SetNVar(BGMVar[4],SetTo,4);
         SetNVar(BGMVar[5],SetTo,4);
         SetNVar(OB_BGMVar,SetTo,4);
-    }) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+    }) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
 TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
         SetNVar(LevelLoopLimit,SetTo,LoopLimit);
         SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitA3);
@@ -531,7 +531,7 @@ TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{
         SetNVar(UV[4],SetTo,UnitB4);SetNVar(UV[5],SetTo,UnitB5);
     },{Preserved})
 DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y)})
-    -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+    -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
 TriggerX(FP,{CDeaths("X",AtMost,4,CStage)},{SetNVar(CDataIndex,SetTo,999)},{Preserved})
 TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
     SetCDeaths("X",SetTo,1,CTimer);
@@ -543,7 +543,7 @@ CIfX(FP,{CDeaths("X",Exactly,1,GMode)})
         TSetNVar(CUnitTypeA,SetTo,UV[1]); -- Main Ground
         SetNVar(CShapeType,SetTo,4*GunLevel-3);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,2,CStage);
@@ -553,7 +553,7 @@ CIfX(FP,{CDeaths("X",Exactly,1,GMode)})
         TSetNVar(CUnitTypeA,SetTo,UV[2]); -- Main Ground
         SetNVar(CShapeType,SetTo,4*GunLevel-3);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,3,CStage);
@@ -563,29 +563,29 @@ CIfX(FP,{CDeaths("X",Exactly,1,GMode)})
         TSetNVar(CUnitTypeA,SetTo,UV[3]); -- Main Ground
         SetNVar(CShapeType,SetTo,4*GunLevel-3);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,4,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
-        --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+        --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
     })
     CTrigger(FP,{CDeaths("X",Exactly,4,CStage),CDeaths("X",Exactly,0,CTimer)},{
         TSetNVar(CUnitTypeA,SetTo,UV[4]); -- Main Ground
         TSetNVar(CUnitTypeB,SetTo,UV[5]); -- Main Air
         SetNVar(CShapeType,SetTo,4*GunLevel-1);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,Add,LoopLimit); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,Add,LoopLimit); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         TSetNVar(CLoopLimit,SetTo,LevelLoopLimit);
         SetCDeaths("X",SetTo,5,CStage);
-        --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+        --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
     })
     CTrigger(FP,{CDeaths("X",Exactly,5,CStage),CDeaths("X",AtLeast,1,CTimer)},{
         TSetNVar(CUnitTypeA,SetTo,UV[4]); -- Main Ground
         TSetNVar(CUnitTypeB,SetTo,UV[5]); -- Main Air
         SetNVar(CShapeType,SetTo,4*GunLevel-1);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,Add,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,Add,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         TSetNVar(CLoopLimit,SetTo,LevelLoopLimit);
     },{Preserved})
 CElseX()
@@ -594,7 +594,7 @@ CTrigger(FP,{CDeaths("X",Exactly,1,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[1]); -- Main Ground
     SetNVar(CShapeType,SetTo,4*GunLevel-2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,2,CStage);
@@ -604,7 +604,7 @@ CTrigger(FP,{CDeaths("X",Exactly,2,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[2]); -- Main Ground
     SetNVar(CShapeType,SetTo,4*GunLevel-2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,3,CStage);
@@ -614,57 +614,57 @@ CTrigger(FP,{CDeaths("X",Exactly,3,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[3]); -- Main Ground
     SetNVar(CShapeType,SetTo,4*GunLevel-2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,4,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
-    --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 CTrigger(FP,{CDeaths("X",Exactly,4,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[4]); -- Main Ground
     TSetNVar(CUnitTypeB,SetTo,UV[5]); -- Main Air
     SetNVar(CShapeType,SetTo,4*GunLevel);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     TSetNVar(CLoopLimit,SetTo,LevelLoopLimit);
     SetCDeaths("X",SetTo,1,SideUnitCode);
     SetCDeaths("X",SetTo,34*5,CTimer);
     SetCDeaths("X",SetTo,5,CStage);
-    --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    --SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 CTrigger(FP,{CDeaths("X",Exactly,5,CStage),CDeaths("X",AtLeast,1,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[4]); -- Main Ground
     TSetNVar(CUnitTypeB,SetTo,UV[5]); -- Main Air
     SetNVar(CShapeType,SetTo,4*GunLevel);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,Add,LoopLimit+1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,Add,LoopLimit+1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     TSetNVar(CLoopLimit,SetTo,LevelLoopLimit);
     SetCDeaths("X",SetTo,1,SideUnitCode);
 },{Preserved})
 CIfXEnd()
 
 CTrigger(FP,{CDeaths("X",Exactly,5,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 
 
-CMov(FP,Gun_UnitA,CUnitTypeA) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-CMov(FP,Gun_UnitB,CUnitTypeB) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-CMov(FP,Gun_LoopLimit,CLoopLimit) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-CMov(FP,Gun_Shape,CShapeType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Shape )
-CMov(FP,Gun_DataIndex,CDataIndex) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( DataIndex )
-CMov(FP,Gun_Player,CPlayer) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Player )
+CMov(FP,Gun_UnitA,CUnitTypeA) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+CMov(FP,Gun_UnitB,CUnitTypeB) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+CMov(FP,Gun_LoopLimit,CLoopLimit) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+CMov(FP,Gun_Shape,CShapeType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Shape )
+CMov(FP,Gun_DataIndex,CDataIndex) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( DataIndex )
+CMov(FP,Gun_Player,CPlayer) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Player )
 
-CallCFuncX(FP,CallNexusCAPlot) -- CAPlot È£Ãâ
+CallCFuncX(FP,CallNexusCAPlot) -- CAPlot í˜¸ì¶œ
 
-CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
 OrderLocSize = 512+512
 OrderLocPosX = CX
 OrderLocPosY = CY
-    Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-    Simple_CalcLocX(FP,"CLoc92",OrderLocPosX,OrderLocPosY,OrderLocPosX,OrderLocPosY) -- ·ÎÄÉ º¹»ç
-    Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+    Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+    Simple_CalcLocX(FP,"CLoc92",OrderLocPosX,OrderLocPosY,OrderLocPosX,OrderLocPosY) -- ë¡œì¼€ ë³µì‚¬
+    Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
     CDoActions(FP,{
         TOrder(CUnitTypeA,CPlayer,"CLoc92",Attack,DestLoc);
         TOrder(CUnitTypeB,CPlayer,"CLoc92",Attack,DestLoc);
@@ -677,14 +677,14 @@ end
 function SetOvermind(Player,GIndex,X,Y,Loc,UnitA1,UnitA2,UnitA3,UnitA4,UnitA5,UnitA6,UnitA7,UnitA8,
         UnitB1,UnitB2,UnitB3,UnitB4,UnitB5,UnitB6,UnitB7,UnitB8)
 
-    CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-    CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-    COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-    CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-    CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-    CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-    CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
-    CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+    CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+    CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+    COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+    CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+    CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+    CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+    CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+    CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
     
 CIf(FP,{Bring(Player,Exactly,0,148,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
     TriggerX(FP,{},{
@@ -696,7 +696,7 @@ CIf(FP,{Bring(Player,Exactly,0,148,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00
         SetNVar(BGMVar[4],SetTo,5);
         SetNVar(BGMVar[5],SetTo,5);
         SetNVar(OB_BGMVar,SetTo,5);
-    }) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+    }) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
 TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
         SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitA3);SetNVar(UV[4],SetTo,UnitA4);
         SetNVar(UV[5],SetTo,UnitA5);SetNVar(UV[6],SetTo,UnitA6);SetNVar(UV[7],SetTo,UnitA7);SetNVar(UV[8],SetTo,UnitA8);
@@ -706,7 +706,7 @@ TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{
         SetNVar(UV[5],SetTo,UnitB5);SetNVar(UV[6],SetTo,UnitB6);SetNVar(UV[7],SetTo,UnitB7);SetNVar(UV[8],SetTo,UnitB8);
     },{Preserved})
 DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-        -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+        -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
 
 TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
     SetCDeaths("X",SetTo,1,CTimer);
@@ -718,7 +718,7 @@ for i = 1, 12 do
         TSetNVar(CUnitTypeA,SetTo,UV[1]); -- Main Air
         SetNVar(CShapeType,SetTo,1);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetNVar(OverAngle,SetTo,30*i);
         SetCDeaths("X",SetTo,4,CTimer);
@@ -729,7 +729,7 @@ CTrigger(FP,{CDeaths("X",Exactly,13,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[2]); -- Main Ground
     SetNVar(CShapeType,SetTo,4);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetNVar(OverAngle,SetTo,30*0);
     SetCDeaths("X",SetTo,34*12,CTimer);
@@ -741,7 +741,7 @@ for i = 14, 25 do
         TSetNVar(CUnitTypeA,SetTo,UV[3]); -- Main Air
         SetNVar(CShapeType,SetTo,2);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetNVar(OverAngle,SetTo,-30*(i-13));
         SetCDeaths("X",SetTo,4,CTimer);
@@ -752,7 +752,7 @@ CTrigger(FP,{CDeaths("X",Exactly,26,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[4]); -- Main Ground
     SetNVar(CShapeType,SetTo,4);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetNVar(OverAngle,SetTo,30*0);
     SetCDeaths("X",SetTo,34*12,CTimer);
@@ -764,7 +764,7 @@ for i = 27, 38 do
         TSetNVar(CUnitTypeA,SetTo,UV[5]); -- Main Air
         SetNVar(CShapeType,SetTo,3);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetNVar(OverAngle,SetTo,30*(i-26));
         SetCDeaths("X",SetTo,4,CTimer);
@@ -775,7 +775,7 @@ CTrigger(FP,{CDeaths("X",Exactly,39,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[6]); -- Main Ground
     SetNVar(CShapeType,SetTo,4);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetNVar(OverAngle,SetTo,30*0);
     SetCDeaths("X",SetTo,34*10,CTimer);
@@ -787,7 +787,7 @@ CTrigger(FP,{CDeaths("X",Exactly,40,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[8]); -- Main Ground
     SetNVar(CShapeType,SetTo,5);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetNVar(OverAngle,SetTo,30*0);
     SetCDeaths("X",SetTo,1,SideUnitCode); -- Last
@@ -796,10 +796,10 @@ CTrigger(FP,{CDeaths("X",Exactly,40,CStage),CDeaths("X",Exactly,0,CTimer)},{
 })
 
 CTrigger(FP,{CDeaths("X",Exactly,42,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 
-CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
+CDoActions(FP,{ -- ê³µí†µë³€ìˆ˜ ì‚½ì…
     TSetNVar(Gun_UnitA,SetTo,CUnitTypeA);
     TSetNVar(Gun_UnitB,SetTo,CUnitTypeB);
     TSetNVar(Gun_LoopLimit,SetTo,CLoopLimit);
@@ -809,12 +809,12 @@ CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
     TSetNVar(Gun_Angle,SetTo,OverAngle);
 })
 
-CallCFuncX(FP,CallOverMindCAPlot) -- CAPlot È£Ãâ
+CallCFuncX(FP,CallOverMindCAPlot) -- CAPlot í˜¸ì¶œ
 
-CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
     OrderLocSize = 512
-        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
         CDoActions(FP,{
             TOrder("Men",CPlayer,"CLoc92",Attack,"HZ");
         })
@@ -827,14 +827,14 @@ end
 function SetPrison(Player,GIndex,X,Y,Loc,UnitA1,UnitA2,UnitA3,UnitA4,UnitA5,UnitA6,UnitA7,UnitA8,
     UnitB1,UnitB2,UnitB3,UnitB4,UnitB5,UnitB6,UnitB7,UnitB8)
 
-CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
-CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 
 CIf(FP,{Bring(Player,Exactly,0,168,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
 TriggerX(FP,{},{
@@ -846,7 +846,7 @@ TriggerX(FP,{},{
     SetNVar(BGMVar[4],SetTo,3);
     SetNVar(BGMVar[5],SetTo,3);
     SetNVar(OB_BGMVar,SetTo,3);
-}) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+}) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
 TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
     SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitA3);SetNVar(UV[4],SetTo,UnitA4);
     SetNVar(UV[5],SetTo,UnitA5);SetNVar(UV[6],SetTo,UnitA6);SetNVar(UV[7],SetTo,UnitA7);SetNVar(UV[8],SetTo,UnitA8);
@@ -856,7 +856,7 @@ TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{
     SetNVar(UV[5],SetTo,UnitB5);SetNVar(UV[6],SetTo,UnitB6);SetNVar(UV[7],SetTo,UnitB7);SetNVar(UV[8],SetTo,UnitB8);
 },{Preserved})
 DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-    -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+    -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
 
 TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
     SetCDeaths("X",SetTo,1,CTimer);
@@ -864,170 +864,170 @@ TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
 })
 
 TriggerX(FP,{CDeaths("X",Exactly,1,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,56); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,56); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,2,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 TriggerX(FP,{CDeaths("X",Exactly,2,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,51); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,51); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,3,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,3,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[1]); -- ¿µ¿õÁö»ó
+    TSetNVar(CUnitTypeA,SetTo,UV[1]); -- ì˜ì›…ì§€ìƒ
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,4,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,4,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[2]); -- ¿µ¿õ°øÁß
+    TSetNVar(CUnitTypeA,SetTo,UV[2]); -- ì˜ì›…ê³µì¤‘
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,5,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 TriggerX(FP,{CDeaths("X",Exactly,5,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,56); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,56); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,6,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 TriggerX(FP,{CDeaths("X",Exactly,6,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,51); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,51); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,7,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,7,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[3]); -- ¿µ¿õÁö»ó
+    TSetNVar(CUnitTypeA,SetTo,UV[3]); -- ì˜ì›…ì§€ìƒ
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,8,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,8,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[4]); -- ¿µ¿õ°øÁß
+    TSetNVar(CUnitTypeA,SetTo,UV[4]); -- ì˜ì›…ê³µì¤‘
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,9,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 TriggerX(FP,{CDeaths("X",Exactly,9,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,56); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,56); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,10,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 TriggerX(FP,{CDeaths("X",Exactly,10,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,51); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,51); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,11,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,11,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[5]); -- ¿µ¿õÁö»ó
+    TSetNVar(CUnitTypeA,SetTo,UV[5]); -- ì˜ì›…ì§€ìƒ
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,12,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,12,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[6]); -- ¿µ¿õ°øÁß
+    TSetNVar(CUnitTypeA,SetTo,UV[6]); -- ì˜ì›…ê³µì¤‘
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,13,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 TriggerX(FP,{CDeaths("X",Exactly,13,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,56); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,56); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,1);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,14,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 TriggerX(FP,{CDeaths("X",Exactly,14,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetNVar(CUnitTypeA,SetTo,51); -- Àâ¸÷
+    SetNVar(CUnitTypeA,SetTo,51); -- ì¡ëª¹
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,15,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,15,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[7]); -- ¿µ¿õÁö»ó
+    TSetNVar(CUnitTypeA,SetTo,UV[7]); -- ì˜ì›…ì§€ìƒ
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,1,CTimer);
     SetCDeaths("X",SetTo,16,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 CTrigger(FP,{CDeaths("X",Exactly,16,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    TSetNVar(CUnitTypeA,SetTo,UV[8]); -- ¿µ¿õ°øÁß
+    TSetNVar(CUnitTypeA,SetTo,UV[8]); -- ì˜ì›…ê³µì¤‘
     SetNVar(CShapeType,SetTo,2);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,17,CStage);
     SetCDeathsX("X",SetTo,1,COrder,0xFF);
 })
 
 TriggerX(FP,{CDeaths("X",Exactly,17,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 
-CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
+CDoActions(FP,{ -- ê³µí†µë³€ìˆ˜ ì‚½ì…
     TSetNVar(Gun_UnitA,SetTo,CUnitTypeA);
     TSetNVar(Gun_LoopLimit,SetTo,CLoopLimit);
     TSetNVar(Gun_Shape,SetTo,CShapeType);
@@ -1035,13 +1035,13 @@ CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
     TSetNVar(Gun_Player,SetTo,CPlayer);
 })
 
-CallCFuncX(FP,CallPrisonCAPlot) -- CAPlot È£Ãâ
+CallCFuncX(FP,CallPrisonCAPlot) -- CAPlot í˜¸ì¶œ
 
-CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
     OrderLocSize = 512
-        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-        --Simple_CalcLocX(FP,"CLoc92",OrderLocPosX,OrderLocPosY,OrderLocPosX,OrderLocPosY) -- ·ÎÄÉ º¹»ç
-        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+        --Simple_CalcLocX(FP,"CLoc92",OrderLocPosX,OrderLocPosY,OrderLocPosX,OrderLocPosY) -- ë¡œì¼€ ë³µì‚¬
+        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
         CDoActions(FP,{
             TOrder(CUnitTypeA,CPlayer,"CLoc92",Attack,"HZ");
         })
@@ -1053,14 +1053,14 @@ end
 
 function SetCenter(Player,GunLevel,GIndex,X,Y,Loc,UnitA1,UnitA2,UnitB1,UnitB2)
 
-CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
-CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 
 CIf(FP,{Bring(Player,Exactly,0,106,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
 TriggerX(FP,{},{
@@ -1072,7 +1072,7 @@ TriggerX(FP,{},{
     SetNVar(BGMVar[4],SetTo,4);
     SetNVar(BGMVar[5],SetTo,4);
     SetNVar(OB_BGMVar,SetTo,4);
-}) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+}) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
 TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
     SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);
 },{Preserved})
@@ -1080,7 +1080,7 @@ TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{
     SetNVar(UV[1],SetTo,UnitB1);SetNVar(UV[2],SetTo,UnitB2);
 },{Preserved})
 DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-    -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+    -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
 
 TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
     SetCDeaths("X",SetTo,1,CTimer);
@@ -1092,7 +1092,7 @@ CTrigger(FP,{CDeaths("X",Exactly,i,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[1]);
     SetNVar(CShapeType,SetTo,GunLevel);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetNVar(CenterAngle1,SetTo,30*i);
     SetNVar(CenterAngle2,SetTo,15*i);
@@ -1108,7 +1108,7 @@ CTrigger(FP,{CDeaths("X",Exactly,i,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeA,SetTo,UV[2]);
     SetNVar(CShapeType,SetTo,GunLevel);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetNVar(CenterAngle1,SetTo,30*i);
     SetNVar(CenterAngle2,SetTo,15*i);
@@ -1120,10 +1120,10 @@ CTrigger(FP,{CDeaths("X",Exactly,i,CStage),CDeaths("X",Exactly,0,CTimer)},{
 end
 
 TriggerX(FP,{CDeaths("X",Exactly,13,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 
-CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
+CDoActions(FP,{ -- ê³µí†µë³€ìˆ˜ ì‚½ì…
     TSetNVar(Gun_UnitA,SetTo,CUnitTypeA);
     TSetNVar(Gun_LoopLimit,SetTo,CLoopLimit);
     TSetNVar(Gun_Shape,SetTo,CShapeType);
@@ -1131,12 +1131,12 @@ CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
     TSetNVar(Gun_Player,SetTo,CPlayer);
 })
 
-CallCFuncX(FP,CallCenterCAPlot) -- CAPlot È£Ãâ
+CallCFuncX(FP,CallCenterCAPlot) -- CAPlot í˜¸ì¶œ
 
-CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
     OrderLocSize = 512
-        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
         CDoActions(FP,{
             TOrder(CUnitTypeA,CPlayer,"CLoc92",Attack,"C2");
         })
@@ -1148,14 +1148,14 @@ end
 
 function SetGenerator(Player,GIndex,X,Y,Loc,UnitA1,UnitA2,UnitA3,UnitA4,UnitB1,UnitB2,UnitB3,UnitB4)
 
-CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
-CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 
 CIf(FP,{Bring(Player,Exactly,0,200,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
 TriggerX(FP,{},{
@@ -1167,7 +1167,7 @@ TriggerX(FP,{},{
     SetNVar(BGMVar[4],SetTo,4);
     SetNVar(BGMVar[5],SetTo,4);
     SetNVar(OB_BGMVar,SetTo,4);
-}) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+}) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
 TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
     SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitA3);SetNVar(UV[4],SetTo,UnitA4);
 },{Preserved})
@@ -1175,7 +1175,7 @@ TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{
     SetNVar(UV[1],SetTo,UnitB1);SetNVar(UV[2],SetTo,UnitB2);SetNVar(UV[3],SetTo,UnitB3);SetNVar(UV[4],SetTo,UnitB4);
 },{Preserved})
 DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-    -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+    -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
 
 TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
     SetCDeaths("X",SetTo,1,CTimer);
@@ -1188,7 +1188,7 @@ for i = 1, 3 do
         TSetNVar(CUnitTypeB,SetTo,UV[2]);
         SetNVar(CShapeType,SetTo,i);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,i+1,CStage);
@@ -1200,7 +1200,7 @@ CTrigger(FP,{CDeaths("X",Exactly,4,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[4]);
     SetNVar(CShapeType,SetTo,4);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,5,CStage);
@@ -1213,7 +1213,7 @@ for i = 1, 3 do
         TSetNVar(CUnitTypeB,SetTo,UV[2]);
         SetNVar(CShapeType,SetTo,i+4);
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetNVar(CLoopLimit,SetTo,600);
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,i+1,CStage);
@@ -1225,7 +1225,7 @@ CTrigger(FP,{CDeaths("X",Exactly,4,CStage),CDeaths("X",Exactly,0,CTimer)},{
     TSetNVar(CUnitTypeB,SetTo,UV[4]);
     SetNVar(CShapeType,SetTo,8);
     SetNVar(CPlayer,SetTo,Player);
-    SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+    SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
     SetNVar(CLoopLimit,SetTo,600);
     SetCDeaths("X",SetTo,34*10,CTimer);
     SetCDeaths("X",SetTo,5,CStage);
@@ -1235,10 +1235,10 @@ CIfXEnd()
 
 
 TriggerX(FP,{CDeaths("X",Exactly,5,CStage),CDeaths("X",Exactly,0,CTimer)},{
-    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+    SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
 })
 
-CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
+CDoActions(FP,{ -- ê³µí†µë³€ìˆ˜ ì‚½ì…
     TSetNVar(Gun_UnitA,SetTo,CUnitTypeA);
     TSetNVar(Gun_UnitB,SetTo,CUnitTypeB);
     TSetNVar(Gun_LoopLimit,SetTo,CLoopLimit);
@@ -1247,13 +1247,13 @@ CDoActions(FP,{ -- °øÅëº¯¼ö »ğÀÔ
     TSetNVar(Gun_Player,SetTo,CPlayer);
 })
 
-CallCFuncX(FP,CallGeneCAPlot) -- CAPlot È£Ãâ
+CallCFuncX(FP,CallGeneCAPlot) -- CAPlot í˜¸ì¶œ
 
-CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
     OrderLocSize = 1024
-        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-        --Simple_CalcLocX(FP,"CLoc92",OrderLocPosX,OrderLocPosY,OrderLocPosX,OrderLocPosY) -- ·ÎÄÉ º¹»ç
-        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+        --Simple_CalcLocX(FP,"CLoc92",OrderLocPosX,OrderLocPosY,OrderLocPosX,OrderLocPosY) -- ë¡œì¼€ ë³µì‚¬
+        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
         CDoActions(FP,{
             TOrder("Men",CPlayer,"CLoc92",Attack,"WH");
         })
@@ -1280,14 +1280,14 @@ CIfEnd()
 end
 
 function SetIonUp(Player,GIndex,Loc)
-    CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-    CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-    COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-    CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-    CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-    CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-    CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
-    CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+    CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+    CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+    COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+    CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+    CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+    CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+    CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+    CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 CIf(FP,{Bring(Player,Exactly,0,127,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
 TriggerX(FP,{},{
         CopyCpAction({DisplayTextX(IonText,4)},{Force1,Force5},FP);
@@ -1317,14 +1317,14 @@ CIfEnd()
 end
 
 function SetIonDown(Player,GIndex,Loc)
-    CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-    CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-    COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-    CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-    CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
-    CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
-    CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
-    CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+    CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+    CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+    COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+    CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+    CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+    CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+    CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+    CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 CIf(FP,{Bring(Player,Exactly,0,127,Loc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
 TriggerX(FP,{},{
         CopyCpAction({DisplayTextX(IonText,4)},{Force1,Force5},FP);
@@ -1354,14 +1354,14 @@ CIfEnd()
 end
 
 -- function SetCocoon(Player,GIndex,X,Y,Loc)
---     CStage = SCD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
---     CTimer = SCD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
---     COrder = SCD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
---     CDataIndex = SGVar[5*GIndex-4] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
---     CUnitTypeA = SGVar[5*GIndex-3] -- À¯´Öº¯¼ö
---     CUnitTypeB = SGVar[5*GIndex-2] -- À¯´Öº¯¼ö
---     CLoopLimit = SGVar[5*GIndex-1] -- ·çÇÁ¸®¹ÌÆ®
---     CShapeType = SGVar[5*GIndex] -- µµÇüµ¥ÀÌÅÍº¯¼ö
+--     CStage = SCD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+--     CTimer = SCD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+--     COrder = SCD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+--     CDataIndex = SGVar[5*GIndex-4] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+--     CUnitTypeA = SGVar[5*GIndex-3] -- ìœ ë‹›ë³€ìˆ˜
+--     CUnitTypeB = SGVar[5*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+--     CLoopLimit = SGVar[5*GIndex-1] -- ë£¨í”„ë¦¬ë¯¸íŠ¸
+--     CShapeType = SGVar[5*GIndex] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
 -- TriggerX(FP,{},{
 --         CopyCpAction({DisplayTextX(CocoonText,4)},{Force1,Force5},FP);
 --         SetScore(Force1,Add,100000,Kills);
