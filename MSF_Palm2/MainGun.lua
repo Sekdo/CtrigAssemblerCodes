@@ -1,19 +1,19 @@
 function Install_MGun()
 
 
-    LText =  "\x13\x1F¦¡¦¬¦´ \x1FL\x04air ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+20,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
-    HText =  "\x13\x1F¦¡¦¬¦´ \x1FH\x04ive ¸¦ ÆÄ±«Çß½À´Ï´Ù. \x19+30,000\x04¨Ü¨à¨ß  \x1F¦²¦¬¦¡"
+    LText =  "\x13\x1Fâ”€â”â”« \x1FL\x04air ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+20,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
+    HText =  "\x13\x1Fâ”€â”â”« \x1FH\x04ive ë¥¼ íŒŒê´´í–ˆìŠµë‹ˆë‹¤. \x19+30,000\x04â“Ÿâ“£â“¢  \x1Fâ”£â”â”€"
 
-    GunMaxAmount = 43 -- ÃÖ´ë°ÇÀÛ°¹¼ö ( ³Ñ¾î°¡¸é ÄÄÆÄÀÏ¿À·ù )
+    GunMaxAmount = 43 -- ìµœëŒ€ê±´ì‘ê°¯ìˆ˜ ( ë„˜ì–´ê°€ë©´ ì»´íŒŒì¼ì˜¤ë¥˜ )
 
-    -- µ¥½º,º¯¼ö ¼³Á¤ // CAPlot °øÅëº¯¼ö¼³Á¤ -- 
+    -- ë°ìŠ¤,ë³€ìˆ˜ ì„¤ì • // CAPlot ê³µí†µë³€ìˆ˜ì„¤ì • -- 
     CD = CreateCcodeArr(3*GunMaxAmount)
     GVar = CreateVarArr(4*GunMaxAmount)
     
     GPosX, GPosY, Gun_LoopLimit, Gun_DataIndex, Gun_Shape, Gun_Unit, Gun_Player, ShapeNum = CreateVars(8,FP)
     UV = CreateVarArr(16)
     ShapeVar = CreateVarArr(12)
-    -- µµÇüµ¥ÀÌÅÍ -- 
+    -- ë„í˜•ë°ì´í„° -- 
     -- Lair --
     SH_A = CSMakePolygon(5,80,0,CS_Level("Polygon",5,3),0)
     SH_B = CSMakePolygon(5,80,0,CS_Level("Polygon",5,4),0)
@@ -43,15 +43,15 @@ function Install_MGun()
     CFunc(CallCAPlot)
         CAPlot(CAShapeArr,P2,193,"CLoc91",{GPosX,GPosY},1,16,{Gun_Shape,0,0,0,600,Gun_DataIndex},nil,FP,nil
         ,{SetNext("X",0x2001),SetNext(0x2002,"X",1)},nil)
-        --[[ PerAction ºÎºĞ (ÇöÀçÆ®¸®°ÅÀÇ NextÆ®¸®°Å¸¦ 0x2001·Î ¼³Á¤ // 0x2002ÀÇ NextÆ®¸®°Å¸¦ ÇöÀçÆ®¸®°ÅÀÇ ´ÙÀ½Æ®¸®°Å·Î ¼³Á¤)
-    ÀÛµ¿¼ø¼­ : 193À¯´Ö»ı¼º(·ÎÄÉ¸¸ÀÌµ¿) -> PerActions(´ÙÀ½Æ®¸®°Å 0x2001·Î¼³Á¤) -> CJump(0x100)~CJumpEnd(0x100) ´Ü¶ôÀ¸·Î ÁøÀÔÈÄ À¯´Ö»ı¼º -> 0x2002
-                -> Æ®¸®°Å0x2002ÀÇ Next¸¦ CAPlotÆ®¸®°Å·Î ¼³Á¤ -> Á¡ ´ÙÂïÈú¶§±îÁö À§ °úÁ¤¹İº¹ -> CAPlot Á¾·á
+        --[[ PerAction ë¶€ë¶„ (í˜„ì¬íŠ¸ë¦¬ê±°ì˜ NextíŠ¸ë¦¬ê±°ë¥¼ 0x2001ë¡œ ì„¤ì • // 0x2002ì˜ NextíŠ¸ë¦¬ê±°ë¥¼ í˜„ì¬íŠ¸ë¦¬ê±°ì˜ ë‹¤ìŒíŠ¸ë¦¬ê±°ë¡œ ì„¤ì •)
+    ì‘ë™ìˆœì„œ : 193ìœ ë‹›ìƒì„±(ë¡œì¼€ë§Œì´ë™) -> PerActions(ë‹¤ìŒíŠ¸ë¦¬ê±° 0x2001ë¡œì„¤ì •) -> CJump(0x100)~CJumpEnd(0x100) ë‹¨ë½ìœ¼ë¡œ ì§„ì…í›„ ìœ ë‹›ìƒì„± -> 0x2002
+                -> íŠ¸ë¦¬ê±°0x2002ì˜ Nextë¥¼ CAPlotíŠ¸ë¦¬ê±°ë¡œ ì„¤ì • -> ì  ë‹¤ì°íë•Œê¹Œì§€ ìœ„ ê³¼ì •ë°˜ë³µ -> CAPlot ì¢…ë£Œ
         ]]--
     CFuncEnd()
-    ----< À¯´Ö»ı¼º´Ü¶ô >----
+    ----< ìœ ë‹›ìƒì„±ë‹¨ë½ >----
     CJump(FP,0x100)
-    SetLabel(0x2001) -- CAPlot PerActions µµÂøÁöÁ¡
-        CDoActions(FP,{ -- À¯´Ö»ı¼º´Ü¶ô
+    SetLabel(0x2001) -- CAPlot PerActions ë„ì°©ì§€ì 
+        CDoActions(FP,{ -- ìœ ë‹›ìƒì„±ë‹¨ë½
             TCreateUnit(1,Gun_Unit,"CLoc91",Gun_Player);
         })
     
@@ -62,15 +62,15 @@ TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{SetNVar(ShapeNum,SetTo,1)},{Preserve
 TriggerX(FP,{CDeaths("X",Exactly,2,GMode)},{SetNVar(ShapeNum,SetTo,2)},{Preserved})
     
 function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,UnitC2,UnitD1,UnitD2) -- Normal(A,B) // Hard(C,D)
-    ----< µ¥½º, º¯¼ö ÇÒ´ç >----
-    CStage = CD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-    CTimer = CD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-    COrder = CD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-    CDataIndex = GVar[4*GIndex-3] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-    CUnitType = GVar[4*GIndex-2] -- À¯´Öº¯¼ö
-    CShapeType = GVar[4*GIndex-1] -- µµÇüµ¥ÀÌÅÍº¯¼ö
-    CPlayer = GVar[4*GIndex] -- ÇÃ·¹ÀÌ¾îº¯¼ö
-    ----< °ÇÀÛÁ¦¾î ´Ü¶ô >----
+    ----< ë°ìŠ¤, ë³€ìˆ˜ í• ë‹¹ >----
+    CStage = CD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+    CTimer = CD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+    COrder = CD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+    CDataIndex = GVar[4*GIndex-3] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+    CUnitType = GVar[4*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+    CShapeType = GVar[4*GIndex-1] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
+    CPlayer = GVar[4*GIndex] -- í”Œë ˆì´ì–´ë³€ìˆ˜
+    ----< ê±´ì‘ì œì–´ ë‹¨ë½ >----
     CIf(FP,{Bring(Player,Exactly,0,132,GLoc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
     TriggerX(FP,{},{
         CopyCpAction({DisplayTextX(LText,4)},{Force1,Force5},FP);
@@ -81,7 +81,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(BGMVar[4],SetTo,1);
         SetNVar(BGMVar[5],SetTo,1);
         SetNVar(OB_BGMVar,SetTo,1);
-    }) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+    }) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
     TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
         SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitB1);SetNVar(UV[4],SetTo,UnitB2);
         SetNVar(ShapeVar[1],SetTo,2);SetNVar(ShapeVar[2],SetTo,2);SetNVar(ShapeVar[3],SetTo,1);SetNVar(ShapeVar[4],SetTo,1);SetNVar(ShapeVar[5],SetTo,2);
@@ -93,7 +93,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(ShapeVar[6],SetTo,5);SetNVar(ShapeVar[7],SetTo,5);SetNVar(ShapeVar[8],SetTo,4);SetNVar(ShapeVar[9],SetTo,4);SetNVar(ShapeVar[10],SetTo,5);
     },{Preserved})
     DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-        -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+        -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
     
     TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
         SetCDeaths("X",SetTo,1,CTimer);
@@ -103,7 +103,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[1]);
         TSetNVar(CShapeType,SetTo,ShapeVar[1]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,2,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -112,7 +112,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,104);
         TSetNVar(CShapeType,SetTo,ShapeVar[2]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,3,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -121,7 +121,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,53);
         TSetNVar(CShapeType,SetTo,ShapeVar[3]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,4,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -130,7 +130,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,54);
         TSetNVar(CShapeType,SetTo,ShapeVar[4]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,5,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -139,7 +139,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[2]);
         TSetNVar(CShapeType,SetTo,ShapeVar[5]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,6,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -148,7 +148,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[3]);
         TSetNVar(CShapeType,SetTo,ShapeVar[6]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,7,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -157,7 +157,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,51);
         TSetNVar(CShapeType,SetTo,ShapeVar[7]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,8,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -166,7 +166,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,53);
         TSetNVar(CShapeType,SetTo,ShapeVar[8]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,9,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -175,7 +175,7 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,48);
         TSetNVar(CShapeType,SetTo,ShapeVar[9]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,10,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -184,26 +184,26 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[4]);
         TSetNVar(CShapeType,SetTo,ShapeVar[10]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,11,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
     })
     TriggerX(FP,{CDeaths("X",Exactly,11,CStage),CDeaths("X",Exactly,0,CTimer)},{
         SetCDeaths("X",SetTo,12,CStage);
-        SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+        SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
     })
-    CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+    CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
     
-    CMov(FP,Gun_Unit,CUnitType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-    CMov(FP,Gun_Shape,CShapeType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Shape )
-    CMov(FP,Gun_DataIndex,CDataIndex) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( DataIndex )
-    CMov(FP,Gun_Player,CPlayer) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Player )
+    CMov(FP,Gun_Unit,CUnitType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+    CMov(FP,Gun_Shape,CShapeType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Shape )
+    CMov(FP,Gun_DataIndex,CDataIndex) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( DataIndex )
+    CMov(FP,Gun_Player,CPlayer) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Player )
     
     OrderLocSize = 256+128
-        CallCFuncX(FP,CallCAPlot) -- CAPlot È£Ãâ
-        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+        CallCFuncX(FP,CallCAPlot) -- CAPlot í˜¸ì¶œ
+        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
         CDoActions(FP,{TOrder(CUnitType,CPlayer,"CLoc92",Attack,"HZ")})
     CIfEnd()
     
@@ -213,15 +213,15 @@ function SetLairGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
 end
 
 function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,UnitC2,UnitD1,UnitD2)
-      ----< µ¥½º, º¯¼ö ÇÒ´ç >----
-    CStage = CD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-    CTimer = CD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-    COrder = CD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-    CDataIndex = GVar[4*GIndex-3] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-    CUnitType = GVar[4*GIndex-2] -- À¯´Öº¯¼ö
-    CShapeType = GVar[4*GIndex-1] -- µµÇüµ¥ÀÌÅÍº¯¼ö
-    CPlayer = GVar[4*GIndex] -- ÇÃ·¹ÀÌ¾îº¯¼ö
-    ----< °ÇÀÛÁ¦¾î ´Ü¶ô >----
+      ----< ë°ìŠ¤, ë³€ìˆ˜ í• ë‹¹ >----
+    CStage = CD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+    CTimer = CD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+    COrder = CD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+    CDataIndex = GVar[4*GIndex-3] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+    CUnitType = GVar[4*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+    CShapeType = GVar[4*GIndex-1] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
+    CPlayer = GVar[4*GIndex] -- í”Œë ˆì´ì–´ë³€ìˆ˜
+    ----< ê±´ì‘ì œì–´ ë‹¨ë½ >----
     CIf(FP,{Bring(Player,Exactly,0,133,GLoc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
         TriggerX(FP,{},{
             CopyCpAction({DisplayTextX(HText,4)},{Force1,Force5},FP);
@@ -232,7 +232,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
             SetNVar(BGMVar[4],SetTo,1);
             SetNVar(BGMVar[5],SetTo,1);
             SetNVar(OB_BGMVar,SetTo,1);
-        }) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+        }) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
     
     TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
         SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitB1);SetNVar(UV[4],SetTo,UnitB2);
@@ -246,7 +246,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
     },{Preserved})
 
     DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-        -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+        -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
     
     TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
         SetCDeaths("X",SetTo,1,CTimer);
@@ -256,7 +256,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[1]);
         TSetNVar(CShapeType,SetTo,ShapeVar[1]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,2,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -265,7 +265,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,104);
         TSetNVar(CShapeType,SetTo,ShapeVar[2]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,3,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -274,7 +274,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,53);
         TSetNVar(CShapeType,SetTo,ShapeVar[3]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,4,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -283,7 +283,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,54);
         TSetNVar(CShapeType,SetTo,ShapeVar[4]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,5,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -292,7 +292,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[2]);
         TSetNVar(CShapeType,SetTo,ShapeVar[5]); -- 2,5
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,6,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -301,7 +301,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[3]);
         TSetNVar(CShapeType,SetTo,ShapeVar[6]); -- 3,6
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,7,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -310,7 +310,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,51);
         TSetNVar(CShapeType,SetTo,ShapeVar[7]); -- 3,6
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,8,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -319,7 +319,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,53);
         TSetNVar(CShapeType,SetTo,ShapeVar[8]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,9,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -328,7 +328,7 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         SetNVar(CUnitType,SetTo,48);
         TSetNVar(CShapeType,SetTo,ShapeVar[9]); -- 1,4
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,1,CTimer);
         SetCDeaths("X",SetTo,10,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -337,26 +337,26 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
         TSetNVar(CUnitType,SetTo,UV[4]);
         TSetNVar(CShapeType,SetTo,ShapeVar[10]); -- 3,6
         SetNVar(CPlayer,SetTo,Player);
-        SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+        SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
         SetCDeaths("X",SetTo,34*10,CTimer);
         SetCDeaths("X",SetTo,11,CStage);
         SetCDeathsX("X",SetTo,1,COrder,0xFF);
     })
     TriggerX(FP,{CDeaths("X",Exactly,11,CStage),CDeaths("X",Exactly,0,CTimer)},{
         SetCDeaths("X",SetTo,12,CStage);
-        SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+        SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
     })
-    CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+    CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
     
-    CMov(FP,Gun_Unit,CUnitType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-    CMov(FP,Gun_Shape,CShapeType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Shape )
-    CMov(FP,Gun_DataIndex,CDataIndex) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( DataIndex )
-    CMov(FP,Gun_Player,CPlayer) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Player )
+    CMov(FP,Gun_Unit,CUnitType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+    CMov(FP,Gun_Shape,CShapeType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Shape )
+    CMov(FP,Gun_DataIndex,CDataIndex) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( DataIndex )
+    CMov(FP,Gun_Player,CPlayer) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Player )
     
     OrderLocSize = 256+256
-        CallCFuncX(FP,CallCAPlot) -- CAPlot È£Ãâ
-        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+        CallCFuncX(FP,CallCAPlot) -- CAPlot í˜¸ì¶œ
+        Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+        Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
         CDoActions(FP,{TOrder(CUnitType,CPlayer,"CLoc92",Attack,"HZ")})
     CIfEnd()
     
@@ -366,15 +366,15 @@ function SetHiveGun(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,Un
 end
 
 function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,UnitC2,UnitD1,UnitD2)
-    ----< µ¥½º, º¯¼ö ÇÒ´ç >----
-  CStage = CD[3*GIndex-2] -- Å¸ÀÌ¸Ó1
-  CTimer = CD[3*GIndex-1] -- Å¸ÀÌ¸Ó2
-  COrder = CD[3*GIndex] -- 0xFF ( ¿À´õ & CallCFuncX ) // 0xFF00 ( °ÇÀÛÀá±İ ) 
-  CDataIndex = GVar[4*GIndex-3] -- µ¥ÀÌÅÍÀÎµ¦½ºº¯¼ö
-  CUnitType = GVar[4*GIndex-2] -- À¯´Öº¯¼ö
-  CShapeType = GVar[4*GIndex-1] -- µµÇüµ¥ÀÌÅÍº¯¼ö
-  CPlayer = GVar[4*GIndex] -- ÇÃ·¹ÀÌ¾îº¯¼ö
-  ----< °ÇÀÛÁ¦¾î ´Ü¶ô >----
+    ----< ë°ìŠ¤, ë³€ìˆ˜ í• ë‹¹ >----
+  CStage = CD[3*GIndex-2] -- íƒ€ì´ë¨¸1
+  CTimer = CD[3*GIndex-1] -- íƒ€ì´ë¨¸2
+  COrder = CD[3*GIndex] -- 0xFF ( ì˜¤ë” & CallCFuncX ) // 0xFF00 ( ê±´ì‘ì ê¸ˆ ) 
+  CDataIndex = GVar[4*GIndex-3] -- ë°ì´í„°ì¸ë±ìŠ¤ë³€ìˆ˜
+  CUnitType = GVar[4*GIndex-2] -- ìœ ë‹›ë³€ìˆ˜
+  CShapeType = GVar[4*GIndex-1] -- ë„í˜•ë°ì´í„°ë³€ìˆ˜
+  CPlayer = GVar[4*GIndex] -- í”Œë ˆì´ì–´ë³€ìˆ˜
+  ----< ê±´ì‘ì œì–´ ë‹¨ë½ >----
   CIf(FP,{Bring(Player,Exactly,0,133,GLoc),CDeathsX("X",Exactly,0*256,COrder,0xFF00)})
       TriggerX(FP,{},{
           CopyCpAction({DisplayTextX(HText,4)},{Force1,Force5},FP);
@@ -385,7 +385,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
           SetNVar(BGMVar[4],SetTo,2);
           SetNVar(BGMVar[5],SetTo,2);
           SetNVar(OB_BGMVar,SetTo,2);
-      }) -- ´ëÃæ¿©µû°¡ °ÇÀÛÅØ½ºÆ® ºê±İº¯¼ö ÇÑ¹ø¸¸ ½ÇÇà
+      }) -- ëŒ€ì¶©ì—¬ë”°ê°€ ê±´ì‘í…ìŠ¤íŠ¸ ë¸Œê¸ˆë³€ìˆ˜ í•œë²ˆë§Œ ì‹¤í–‰
   
   TriggerX(FP,{CDeaths("X",Exactly,1,GMode)},{
       SetNVar(UV[1],SetTo,UnitA1);SetNVar(UV[2],SetTo,UnitA2);SetNVar(UV[3],SetTo,UnitB1);SetNVar(UV[4],SetTo,UnitB2);
@@ -399,7 +399,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
   },{Preserved})
 
   DoActionsX(FP,{SetNVar(GPosX,SetTo,X),SetNVar(GPosY,SetTo,Y),SetNVar(CDataIndex,SetTo,999)})
-      -- ¡è¡è°ÇÀÛÁÂÇ¥ »ó½Ã¼¼ÆÃ // µ¥ÀÌÅÍÀÎµ¦½º999°íÁ¤ ( À¯´Ö¾È³ª¿À°Ô¼³Á¤)
+      -- â†‘â†‘ê±´ì‘ì¢Œí‘œ ìƒì‹œì„¸íŒ… // ë°ì´í„°ì¸ë±ìŠ¤999ê³ ì • ( ìœ ë‹›ì•ˆë‚˜ì˜¤ê²Œì„¤ì •)
   
   TriggerX(FP,{CDeaths("X",Exactly,0,CTimer),CDeaths("X",Exactly,0,CStage)},{
       SetCDeaths("X",SetTo,1,CTimer);
@@ -409,7 +409,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       TSetNVar(CUnitType,SetTo,UV[1]);
       TSetNVar(CShapeType,SetTo,ShapeVar[1]); -- 1,4
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,2,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -418,7 +418,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       SetNVar(CUnitType,SetTo,104);
       TSetNVar(CShapeType,SetTo,ShapeVar[2]); -- 2,5
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,3,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -427,7 +427,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       SetNVar(CUnitType,SetTo,53);
       TSetNVar(CShapeType,SetTo,ShapeVar[3]); -- 1,4
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,4,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -436,7 +436,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       SetNVar(CUnitType,SetTo,54);
       TSetNVar(CShapeType,SetTo,ShapeVar[4]); -- 1,4
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,5,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -445,7 +445,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       TSetNVar(CUnitType,SetTo,UV[2]);
       TSetNVar(CShapeType,SetTo,ShapeVar[5]); -- 2,5
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,34*13,CTimer);
       SetCDeaths("X",SetTo,6,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -454,7 +454,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       TSetNVar(CUnitType,SetTo,UV[3]);
       TSetNVar(CShapeType,SetTo,ShapeVar[6]); -- 1,4
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,7,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -463,7 +463,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       SetNVar(CUnitType,SetTo,51);
       TSetNVar(CShapeType,SetTo,ShapeVar[7]); -- 3,6
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,8,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -472,7 +472,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       SetNVar(CUnitType,SetTo,53);
       TSetNVar(CShapeType,SetTo,ShapeVar[8]); -- 1,4
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,9,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -481,7 +481,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       SetNVar(CUnitType,SetTo,48);
       TSetNVar(CShapeType,SetTo,ShapeVar[9]); -- 1,4
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,1,CTimer);
       SetCDeaths("X",SetTo,10,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
@@ -490,26 +490,26 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
       TSetNVar(CUnitType,SetTo,UV[4]);
       TSetNVar(CShapeType,SetTo,ShapeVar[10]); -- 3,6
       SetNVar(CPlayer,SetTo,Player);
-      SetNVar(CDataIndex,SetTo,1); -- µ¥ÀÌÅÍÀÎµ¦½º ÃÊ±âÈ­
+      SetNVar(CDataIndex,SetTo,1); -- ë°ì´í„°ì¸ë±ìŠ¤ ì´ˆê¸°í™”
       SetCDeaths("X",SetTo,34*13,CTimer);
       SetCDeaths("X",SetTo,11,CStage);
       SetCDeathsX("X",SetTo,1,COrder,0xFF);
   })
   TriggerX(FP,{CDeaths("X",Exactly,11,CStage),CDeaths("X",Exactly,0,CTimer)},{
       SetCDeaths("X",SetTo,12,CStage);
-      SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- °ÇÀÛÀá±İ
+      SetCDeathsX("X",SetTo,1*256,COrder,0xFF00); -- ê±´ì‘ì ê¸ˆ
   })
-  CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ¿À´õ
+  CIf(FP,{CDeathsX("X",Exactly,1,COrder,0xFF)},{SetCDeathsX("X",SetTo,0,COrder,0xFF)}) -- CAPlot / ì˜¤ë”
   
-  CMov(FP,Gun_Unit,CUnitType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( UnitID )
-  CMov(FP,Gun_Shape,CShapeType) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Shape )
-  CMov(FP,Gun_DataIndex,CDataIndex) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( DataIndex )
-  CMov(FP,Gun_Player,CPlayer) -- °øÅëº¯¼ö¿¡ °¢ °ÇÀÛº¯¼ö°ª ´ëÀÔ ( Player )
+  CMov(FP,Gun_Unit,CUnitType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( UnitID )
+  CMov(FP,Gun_Shape,CShapeType) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Shape )
+  CMov(FP,Gun_DataIndex,CDataIndex) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( DataIndex )
+  CMov(FP,Gun_Player,CPlayer) -- ê³µí†µë³€ìˆ˜ì— ê° ê±´ì‘ë³€ìˆ˜ê°’ ëŒ€ì… ( Player )
   
   OrderLocSize = 256+256
-      CallCFuncX(FP,CallCAPlot) -- CAPlot È£Ãâ
-      Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ·ÎÄÉ º¹»ç
-      Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ·ÎÄÉÅ©±â¼³Á¤
+      CallCFuncX(FP,CallCAPlot) -- CAPlot í˜¸ì¶œ
+      Simple_SetLocX(FP,"CLoc92",GPosX,GPosY,GPosX,GPosY) -- ë¡œì¼€ ë³µì‚¬
+      Simple_CalcLocX(FP,"CLoc92",-OrderLocSize,-OrderLocSize,OrderLocSize,OrderLocSize) -- ë¡œì¼€í¬ê¸°ì„¤ì •
       CDoActions(FP,{TOrder(CUnitType,CPlayer,"CLoc92",Attack,"HZ")})
   CIfEnd()
   
@@ -519,7 +519,7 @@ function SetHiveGun2(Player,GIndex,X,Y,GLoc,UnitA1,UnitA2,UnitB1,UnitB2,UnitC1,U
 end
 
 
------------< ¿ìÃø¶óÀÎ °ÇÀÛ >-----------
+-----------< ìš°ì¸¡ë¼ì¸ ê±´ì‘ >-----------
 SetLairGun(P6,1,3839,746,"L1",40,55,40,56, 93,55,93,56)
 SetLairGun(P6,2,3681,1194,"L2",51,55,51,56, 74,55,74,56)
 SetHiveGun(P6,3,3857,1315,"H1",40,55,51,56, 93,56,74,56)
@@ -540,7 +540,7 @@ SetLairGun(P6,13,2812,3589,"L9",17,55,17,56, 76,55,76,56)
 SetLairGun(P6,14,3006,3707,"L10",19,55,19,56, 63,55,63,56)
 SetHiveGun(P6,15,2860,3856,"H5",17,56,19,56, 76,56,63,56)
 
------------< ÁÂÃø¶óÀÎ °ÇÀÛ >-----------
+-----------< ì¢Œì¸¡ë¼ì¸ ê±´ì‘ >-----------
 SetLairGun(P7,16,1368,3591,"L11",76,56,76,56, 81,56,81,56)
 SetLairGun(P7,17,1129,3740,"L12",63,56,63,56, 5,56,5,56)
 SetHiveGun(P7,18,976,3927,"H6",76,56,63,21, 81,56,5,80)
@@ -570,7 +570,7 @@ SetHiveGun2(P7,35,230,291,"H13",66,80,66,88, 87,88,87,22)
 SetHiveGun2(P7,36,635,123,"H14",87,21,87,8, 61,8,61,22)
 SetHiveGun2(P7,37,1052,309,"H15",61,21,61,8, 23,8,23,22)
 
------------< Áß¾Ó¶óÀÎ °ÇÀÛ >-----------
+-----------< ì¤‘ì•™ë¼ì¸ ê±´ì‘ >-----------
 
 SetHiveGun2(P8,38,2121,3207,"H16",65,80,102,86, 65,88,102,60)
 SetHiveGun2(P8,39,2753,2843,"H17",66,80,102,86, 66,88,102,60)
